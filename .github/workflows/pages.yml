@@ -1,0 +1,61 @@
+name: Deploy Hugo site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Check out site and pinned theme
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 1
+      - name: Install Hugo Extended
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.167.0'
+          extended: true
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build
+        env:
+          HUGO_ENVIRONMENT: production
+          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: hugo --gc --minify --baseURL "${PAGES_BASE_URL%/}/" --panicOnWarning
+      - name: Validate local links and media
+        env:
+          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: python3 scripts/verify_site.py --public public --base-url "${PAGES_BASE_URL%/}/"
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

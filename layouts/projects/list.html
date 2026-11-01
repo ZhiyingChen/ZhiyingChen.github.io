@@ -1,0 +1,4 @@
+{{ define "main" }}
+<section class="portfolio-page"><header class="page-heading"><p class="eyebrow">PROJECTS & EXPLORATIONS</p><h1>{{ .Title }}</h1><p>{{ .Description }}</p><div class="page-meta"><span>7 个项目系列</span><span>8 篇案例详解</span><span>持续探索中</span></div></header>
+<div class="project-grid">{{ range .RegularPages.ByWeight }}{{ partial "project-card.html" . }}{{ end }}</div></section>
+{{ end }}

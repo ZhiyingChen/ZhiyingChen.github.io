@@ -1,0 +1,197 @@
+{
+  "imported_on": "2026-11-01",
+  "pages": [
+    {
+      "title": "关于我",
+      "path": "content/about.md",
+      "source_id": "205891a4-bd54-8051-bc2f-c5b64241d12a",
+      "blocks": 57,
+      "characters": 3008
+    },
+    {
+      "title": "主生产计划（MPS）与制造协同优化系列",
+      "path": "content/projects/manufacturing-planning.md",
+      "source_id": "35b891a4-bd54-8029-9bc4-cfdbe5549dcd",
+      "blocks": 102,
+      "characters": 3213
+    },
+    {
+      "title": "钢铁原料与冶炼优化系列",
+      "path": "content/projects/steel-optimization.md",
+      "source_id": "208891a4-bd54-8098-9ea7-d08d1ec54c6d",
+      "blocks": 27,
+      "characters": 664
+    },
+    {
+      "title": "车辆轮转与维修调度优化系列",
+      "path": "content/projects/vehicle-scheduling.md",
+      "source_id": "35b891a4-bd54-803d-9ed2-ebde61546a8e",
+      "blocks": 89,
+      "characters": 2196
+    },
+    {
+      "title": "切割优化与列生成算法",
+      "path": "content/projects/cutting-stock.md",
+      "source_id": "207891a4-bd54-809f-9d95-cc8943ccd895",
+      "blocks": 74,
+      "characters": 2059
+    },
+    {
+      "title": "仓储管理与选址优化模型",
+      "path": "content/projects/warehouse-location.md",
+      "source_id": "206891a4-bd54-8093-9154-ccc9a0db0dfa",
+      "blocks": 82,
+      "characters": 2005
+    },
+    {
+      "title": "植树造林对云和降雨的影响地图可视化项目",
+      "path": "content/projects/climate-mapping.md",
+      "source_id": "206891a4-bd54-8003-b45b-fa4ccab56eba",
+      "blocks": 16,
+      "characters": 853
+    },
+    {
+      "title": "强化学习算法复现（含github链接）",
+      "path": "content/projects/reinforcement-learning.md",
+      "source_id": "35b891a4-bd54-80e0-bd6f-eed6faa47e89",
+      "blocks": 60,
+      "characters": 1618
+    },
+    {
+      "title": "锂电池智能制造排程优化系统",
+      "path": "content/cases/battery-scheduling.md",
+      "source_id": "208891a4-bd54-8014-a202-f9e5a4080c07",
+      "blocks": 58,
+      "characters": 2647
+    },
+    {
+      "title": "光伏行业主生产计划（MPS）优化项目",
+      "path": "content/cases/solar-mps.md",
+      "source_id": "208891a4-bd54-801e-873c-c1fd4345cb63",
+      "blocks": 70,
+      "characters": 2954
+    },
+    {
+      "title": "主计划优化模型（家电行业）",
+      "path": "content/cases/appliance-mps.md",
+      "source_id": "208891a4-bd54-80fc-b8e4-ed608e1593be",
+      "blocks": 67,
+      "characters": 1979
+    },
+    {
+      "title": "烧结优化模型（Sintering Management）",
+      "path": "content/cases/sintering-management.md",
+      "source_id": "35b891a4-bd54-8007-9133-ef2e76227c14",
+      "blocks": 76,
+      "characters": 1421
+    },
+    {
+      "title": "混矿优化模型（Mixed Mine Management）",
+      "path": "content/cases/mixed-mine-management.md",
+      "source_id": "35b891a4-bd54-8016-b609-c206e8238610",
+      "blocks": 74,
+      "characters": 1567
+    },
+    {
+      "title": "钢铁配矿优化模型（吨铁成本最小化 · 烧结-炼铁一体化）",
+      "path": "content/cases/integrated-steel.md",
+      "source_id": "35b891a4-bd54-8014-9455-c56e725ece2c",
+      "blocks": 115,
+      "characters": 2711
+    },
+    {
+      "title": "汽车轮转与维修调度优化模型（1）单车种、维修错峰、最小车辆数",
+      "path": "content/cases/single-fleet.md",
+      "source_id": "206891a4-bd54-8051-af47-d464a5fd57a9",
+      "blocks": 63,
+      "characters": 2866
+    },
+    {
+      "title": "汽车轮转与维修调度优化模型（2）多车种、任务组合、ALNS 扩展",
+      "path": "content/cases/multi-fleet-alns.md",
+      "source_id": "206891a4-bd54-8033-87c8-eb0d841bbe3a",
+      "blocks": 66,
+      "characters": 2243
+    }
+  ],
+  "media_count": 19,
+  "media": [
+    {
+      "path": "/media/205891a4-a9a8f87100.jpg",
+      "bytes": 674493
+    },
+    {
+      "path": "/media/205891a4-071118da70.jpg",
+      "bytes": 4726854
+    },
+    {
+      "path": "/media/35b891a4-725b86ba13.png",
+      "bytes": 204090
+    },
+    {
+      "path": "/media/227891a4-81497fd95b.png",
+      "bytes": 87549
+    },
+    {
+      "path": "/media/206891a4-c83f1e07fc.png",
+      "bytes": 255435
+    },
+    {
+      "path": "/media/35b891a4-5455b8e4ba.png",
+      "bytes": 1996766
+    },
+    {
+      "path": "/media/35b891a4-a1860f0dde.ico",
+      "bytes": 205556
+    },
+    {
+      "path": "/media/206891a4-27182ff26d.png",
+      "bytes": 91188
+    },
+    {
+      "path": "/media/206891a4-c0adac64bc.png",
+      "bytes": 90750
+    },
+    {
+      "path": "/media/206891a4-89152695d6.png",
+      "bytes": 257128
+    },
+    {
+      "path": "/media/35b891a4-203a93054c.png",
+      "bytes": 10591
+    },
+    {
+      "path": "/media/208891a4-c8da3ca5ee.png",
+      "bytes": 1809769
+    },
+    {
+      "path": "/media/208891a4-b6ce3cca1e.png",
+      "bytes": 1378133
+    },
+    {
+      "path": "/media/208891a4-c2f1e9bb2a.png",
+      "bytes": 93453
+    },
+    {
+      "path": "/media/208891a4-5f26d394a3.png",
+      "bytes": 1612938
+    },
+    {
+      "path": "/media/206891a4-d3a0ed6133.png",
+      "bytes": 134940
+    },
+    {
+      "path": "/media/206891a4-c936a9c32e.png",
+      "bytes": 87361
+    },
+    {
+      "path": "/media/206891a4-a5b40918ad.png",
+      "bytes": 69662
+    },
+    {
+      "path": "/media/207891a4-6ddb2010cf.png",
+      "bytes": 88021
+    }
+  ],
+  "media_errors": 0
+}

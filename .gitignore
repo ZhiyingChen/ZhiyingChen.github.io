@@ -1,0 +1,11 @@
+public/
+resources/_gen/
+.hugo_build.lock
+.tools/
+.migration/
+.venv/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db

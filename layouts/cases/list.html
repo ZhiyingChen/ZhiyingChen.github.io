@@ -1,0 +1,4 @@
+{{ define "main" }}
+<section class="portfolio-page"><header class="page-heading"><p class="eyebrow">CASE STUDIES</p><h1>{{ .Title }}</h1><p>{{ .Description }}</p></header>
+<div class="project-grid">{{ range .RegularPages.ByTitle }}{{ partial "project-card.html" . }}{{ end }}</div></section>
+{{ end }}

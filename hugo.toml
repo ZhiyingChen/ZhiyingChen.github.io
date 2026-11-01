@@ -1,0 +1,101 @@
+baseURL = 'https://zhiyingchen.github.io/'
+title = "Nicole’s Wonderland"
+theme = 'blowfish'
+defaultContentLanguage = 'zh-cn'
+hasCJKLanguage = true
+enableRobotsTXT = true
+enableEmoji = true
+summaryLength = 100
+disableKinds = ['taxonomy', 'term']
+buildFuture = false
+
+[languages.zh-cn]
+  label = '简体中文'
+  locale = 'zh-CN'
+  weight = 1
+  title = "Nicole’s Wonderland"
+  [languages.zh-cn.params]
+    displayName = '中文'
+    isoCode = 'zh-CN'
+    dateFormat = '2006 年 1 月 2 日'
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[pagination]
+  pagerSize = 30
+
+[params]
+  description = 'Nicole Chen 的个人网站。运筹优化、数据建模，以及在制造与供应链场景中的系统化落地。'
+  colorScheme = 'avocado'
+  defaultAppearance = 'light'
+  autoSwitchAppearance = false
+  enableSearch = true
+  enableCodeCopy = true
+  disableImageZoom = false
+  disableImageOptimization = true
+  disableImageOptimizationMD = true
+  disableTextInHeader = false
+  mainSections = ['projects', 'cases']
+  highlightCurrentMenuArea = true
+
+  [params.author]
+    name = 'Nicole Chen'
+    email = 'nicolec1999@foxmail.com'
+    headline = '运筹优化 · 数据建模 · 系统建设'
+    links = [
+      {github = 'https://github.com/ZhiyingChen'},
+      {linkedin = 'https://www.linkedin.com/in/zhiying-chen-444978202/'},
+      {email = 'mailto:nicolec1999@foxmail.com'}
+    ]
+
+  [params.header]
+    layout = 'basic'
+
+  [params.footer]
+    showAppearanceSwitcher = true
+    showScrollToTop = true
+
+  [params.homepage]
+    layout = 'custom'
+    showRecent = false
+
+  [params.article]
+    showDate = false
+    showAuthor = false
+    showReadingTime = false
+    showWordCount = false
+    showTableOfContents = true
+
+[[menus.main]]
+  name = '首页'
+  pageRef = '/'
+  weight = 10
+[[menus.main]]
+  name = '项目'
+  pageRef = '/projects'
+  weight = 20
+[[menus.main]]
+  name = '关于我'
+  pageRef = '/about'
+  weight = 30
+[[menus.main]]
+  name = '咨询网站 ↗'
+  url = 'https://wisdawn-consult.cn/'
+  weight = 35
+[[menus.main]]
+  name = '联系'
+  pageRef = '/contact'
+  weight = 40
+
+[markup.goldmark.renderer]
+  unsafe = true
+[markup.goldmark.parser]
+  wrapStandAloneImageWithinParagraph = false
+[markup.goldmark.parser.attribute]
+  block = true
+[markup.highlight]
+  noClasses = false
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 4

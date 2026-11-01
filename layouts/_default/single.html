@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article class="detail-page">
+  <header class="detail-heading">
+    {{ if .Params.series_parent }}<a class="text-link back-link" href="{{ strings.TrimPrefix `/` .Params.series_parent | relURL }}">← {{ .Params.series_title }}</a>{{ else if eq .Section "projects" }}<a class="text-link back-link" href="{{ `projects/` | relURL }}">← 全部项目</a>{{ else }}<p class="eyebrow">NICOLE’S WONDERLAND</p>{{ end }}
+    {{ with .Params.eyebrow }}<p class="eyebrow article-eyebrow">{{ . }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="detail-description">{{ . }}</p>{{ end }}
+    {{ with .Params.tags }}<div class="card-tags article-tags">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
+  </header>
+  <div class="reading-layout {{ if eq .Params.showTableOfContents false }}without-toc{{ end }}">
+    <div class="article-content prose dark:prose-invert">{{ .Content }}</div>
+    {{ if and (ne .Params.showTableOfContents false) (in .TableOfContents "<ul") }}<aside class="reading-toc" aria-label="文章目录"><div><p class="eyebrow">本页目录</p>{{ .TableOfContents }}</div></aside>{{ end }}
+  </div>
+  {{ if or (eq .Section "projects") (eq .Section "cases") }}<div class="article-contact"><p>对这个方向感兴趣？欢迎交流。</p><a class="text-link" href="{{ `contact/` | relURL }}">联系 Nicole <span aria-hidden="true">↗</span></a></div>{{ end }}
+</article>
+{{ end }}

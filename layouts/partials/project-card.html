@@ -1,0 +1,6 @@
+<article class="project-card">
+  <a class="project-card-link" href="{{ .RelPermalink }}">
+    <div class="project-art art-{{ .Params.visual }}">{{ partial "project-diagram.html" . }}<span class="art-caption">{{ .Params.eyebrow }}</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+    <div class="project-card-body"><p class="card-eyebrow">{{ .Params.eyebrow }}</p><h3>{{ .Title }}</h3><p class="card-summary">{{ .Description }}</p><div class="card-tags">{{ range first 3 .Params.tags }}<span>{{ . }}</span>{{ end }}</div></div>
+  </a>
+</article>

@@ -1,0 +1,24 @@
+<svg class="project-diagram" viewBox="0 0 360 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  {{ if eq .Params.visual "planning" }}
+    <path d="M48 44H312M48 77H312M48 110H312M48 143H312M80 30V152M130 30V152M180 30V152M230 30V152M280 30V152" class="diagram-grid"/>
+    <rect x="80" y="36" width="88" height="17" rx="4" class="diagram-fill"/><rect x="131" y="69" width="100" height="17" rx="4" class="diagram-fill secondary-fill"/><rect x="182" y="102" width="99" height="17" rx="4" class="diagram-fill"/><rect x="81" y="135" width="148" height="10" rx="4" class="diagram-fill secondary-fill"/>
+    <path d="M167 44H181V77M230 77H245V110" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 4"/>
+  {{ else if eq .Params.visual "steel" }}
+    <path d="M74 45L125 91L74 137M125 91H207M207 91L270 48M207 91L270 137" stroke="currentColor" stroke-width="1.5"/>
+    <circle cx="74" cy="45" r="16" class="diagram-node"/><circle cx="74" cy="137" r="16" class="diagram-node"/><circle cx="125" cy="91" r="22" class="diagram-node"/><circle cx="207" cy="91" r="28" class="diagram-node solid-node"/><circle cx="270" cy="48" r="19" class="diagram-node"/><circle cx="270" cy="137" r="19" class="diagram-node"/>
+    <path d="M197 91H217M207 81V101" stroke="white" stroke-width="2"/>
+  {{ else if eq .Params.visual "routing" }}
+    <path d="M60 129L101 48L175 93L246 39L299 126L224 139L175 93L60 129Z" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <path d="M60 129L175 93L246 39L299 126L224 139" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+    <g class="diagram-node"><circle cx="60" cy="129" r="8"/><circle cx="101" cy="48" r="8"/><circle cx="175" cy="93" r="10"/><circle cx="246" cy="39" r="8"/><circle cx="299" cy="126" r="8"/><circle cx="224" cy="139" r="8"/></g>
+  {{ else if eq .Params.visual "cutting" }}
+    <rect x="58" y="44" width="242" height="92" rx="7" class="diagram-node"/><path d="M120 44V136M203 44V136M120 88H300" stroke="currentColor" stroke-width="2"/>
+    <rect x="65" y="51" width="48" height="78" rx="3" class="diagram-fill"/><rect x="127" y="51" width="69" height="30" rx="3" class="diagram-fill secondary-fill"/><rect x="210" y="51" width="83" height="30" rx="3" class="diagram-fill"/><path d="M130 123L154 99M151 123L175 99M172 123L196 99M214 123L238 99M235 123L259 99M256 123L280 99" stroke="currentColor" opacity=".3"/>
+  {{ else if eq .Params.visual "warehouse" }}
+    <path d="M175 89L66 44M175 89L67 139M175 89L290 42M175 89L289 140" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/><path d="M145 80L175 60L205 80V116H145V80Z" class="diagram-node solid-node"/><path d="M165 116V91H185V116" stroke="white" stroke-width="1.5"/><g class="diagram-node"><circle cx="66" cy="44" r="9"/><circle cx="67" cy="139" r="9"/><circle cx="290" cy="42" r="9"/><circle cx="289" cy="140" r="9"/></g>
+  {{ else if eq .Params.visual "mapping" }}
+    <circle cx="180" cy="91" r="62" class="diagram-node"/><ellipse cx="180" cy="91" rx="29" ry="62" stroke="currentColor"/><path d="M120 73H240M120 109H240M180 29V153" stroke="currentColor" opacity=".5"/><circle cx="206" cy="61" r="7" class="diagram-fill"/><circle cx="156" cy="115" r="5" class="diagram-fill"/>
+  {{ else }}
+    <path d="M72 131V42M72 131H294M86 120L121 106L156 111L191 73L226 78L270 43" stroke="currentColor" stroke-width="2"/><path d="M86 120L121 106L156 111L191 73L226 78L270 43V131H86V120Z" fill="currentColor" opacity=".08"/><g class="diagram-fill"><circle cx="121" cy="106" r="5"/><circle cx="191" cy="73" r="5"/><circle cx="270" cy="43" r="5"/></g>
+  {{ end }}
+</svg>
