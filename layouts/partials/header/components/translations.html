@@ -1,0 +1,7 @@
+{{ if .IsTranslated }}
+  <div role="group" class="language-switch" aria-label="{{ if eq .Site.Language.Lang "en" }}Language{{ else }}语言{{ end }}">
+    {{ range .AllTranslations }}
+      <a href="{{ .RelPermalink }}" lang="{{ .Language.Locale }}" hreflang="{{ .Language.Locale }}"{{ if eq .Language.Lang $.Site.Language.Lang }} aria-current="true"{{ end }} aria-label="{{ if eq .Language.Lang "en" }}Read this page in English{{ else }}以中文阅读本页{{ end }}">{{ if eq .Language.Lang "en" }}EN{{ else }}中{{ end }}</a>
+    {{ end }}
+  </div>
+{{ end }}

@@ -1,0 +1,7 @@
+{{- $index := slice -}}
+{{- range .Site.RegularPages -}}
+  {{- if not .Params.excludeFromSearch -}}
+    {{- $index = $index | append (dict "title" .Title "section" .CurrentSection.Title "summary" (.Description | plainify) "content" .Plain "permalink" .RelPermalink "type" .Type) -}}
+  {{- end -}}
+{{- end -}}
+{{- $index | jsonify -}}

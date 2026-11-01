@@ -1,0 +1,131 @@
+{
+  "hero_label": {
+    "other": "NICOLE CHEN / OPTIMIZATION · DATA · SYSTEMS"
+  },
+  "hero_title": {
+    "other": "Optimization models.<br><span class=\"accent-text\">Real-world impact.</span>"
+  },
+  "hero_intro": {
+    "other": "Hi, I’m Nicole.<br>I turn optimization models into practical systems,<br class=\"desktop-break\"> helping businesses make better decisions under complex constraints."
+  },
+  "explore_projects": {
+    "other": "Explore my work"
+  },
+  "meet_me": {
+    "other": "Meet Nicole"
+  },
+  "manufacturing": {
+    "other": "Manufacturing & supply chains"
+  },
+  "optimization": {
+    "other": "Operations research"
+  },
+  "modeling": {
+    "other": "Data modeling"
+  },
+  "portrait_alt": {
+    "other": "Nicole standing on a green hillside"
+  },
+  "define": {
+    "other": "Define the problem"
+  },
+  "formulate": {
+    "other": "Build the model"
+  },
+  "solve": {
+    "other": "Find the solution"
+  },
+  "deliver": {
+    "other": "Put it to work"
+  },
+  "selected_title": {
+    "other": "A few projects. A continuing journey."
+  },
+  "all_projects": {
+    "other": "All 7 projects"
+  },
+  "about_title": {
+    "other": "Connecting models<br> with business."
+  },
+  "about_intro": {
+    "other": "I design solutions from a business perspective, bringing mathematical models, system logic, and operational needs together."
+  },
+  "experience_link": {
+    "other": "Experience & skills"
+  },
+  "present": {
+    "other": "Mar 2026 — Present"
+  },
+  "education": {
+    "other": "Education"
+  },
+  "edinburgh": {
+    "other": "University of Edinburgh"
+  },
+  "msc": {
+    "other": "MSc Operational Research with Data Science"
+  },
+  "nanjing": {
+    "other": "Nanjing University"
+  },
+  "maths": {
+    "other": "Undergraduate studies · Mathematics"
+  },
+  "consulting_label": {
+    "other": "MY OTHER WORK / A CONSULTING PLATFORM I BUILT"
+  },
+  "consulting_title": {
+    "other": "Wisdawn Consulting Agent"
+  },
+  "consulting_description": {
+    "other": "For supply chain and manufacturing projects: business discovery, requirements, feasibility analysis, and implementation recommendations.<br>Understand the project before taking the next step."
+  },
+  "discovery": {
+    "other": "Discovery"
+  },
+  "requirements": {
+    "other": "Requirements"
+  },
+  "feasibility": {
+    "other": "Feasibility"
+  },
+  "implementation": {
+    "other": "Implementation"
+  },
+  "visit_consulting": {
+    "other": "Visit consulting site"
+  },
+  "consulting_language": {
+    "other": "Website in Chinese"
+  },
+  "contact_title": {
+    "other": "Let’s explore what comes next."
+  },
+  "contact_description": {
+    "other": "Optimization, data, and turning ideas into working systems."
+  },
+  "contact_nicole": {
+    "other": "Contact Nicole"
+  },
+  "back_projects": {
+    "other": "All projects"
+  },
+  "toc": {
+    "other": "On this page"
+  },
+  "toc_label": {
+    "other": "Table of contents"
+  },
+  "article_contact": {
+    "other": "Interested in this work? Let’s talk."
+  },
+  "project_count": {
+    "other": "7 project collections"
+  },
+  "case_count": {
+    "other": "8 detailed case studies"
+  },
+  "exploring": {
+    "other": "More to explore"
+  }
+}

@@ -10,6 +10,8 @@ disableKinds = ['taxonomy', 'term']
 buildFuture = false
 
 [languages.zh-cn]
+  contentDir = 'content'
+  hasCJKLanguage = true
   label = '简体中文'
   locale = 'zh-CN'
   weight = 1
@@ -18,6 +20,7 @@ buildFuture = false
     displayName = '中文'
     isoCode = 'zh-CN'
     dateFormat = '2006 年 1 月 2 日'
+    description = 'Nicole Chen 的个人网站。运筹优化、数据建模，以及制造与供应链系统建设。'
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
@@ -67,24 +70,58 @@ buildFuture = false
     showWordCount = false
     showTableOfContents = true
 
-[[menus.main]]
+[languages.en]
+  contentDir = 'content'
+  hasCJKLanguage = false
+  label = 'English'
+  locale = 'en-US'
+  weight = 2
+  title = "Nicole’s Wonderland"
+  [languages.en.params]
+    displayName = 'English'
+    isoCode = 'en'
+    dateFormat = '2 January 2006'
+    description = 'Nicole Chen’s portfolio: operations research, data modeling, and practical systems for manufacturing and supply chains.'
+
+[[languages.zh-cn.menus.main]]
   name = '首页'
   pageRef = '/'
   weight = 10
-[[menus.main]]
+[[languages.zh-cn.menus.main]]
   name = '项目'
   pageRef = '/projects'
   weight = 20
-[[menus.main]]
+[[languages.zh-cn.menus.main]]
   name = '关于我'
   pageRef = '/about'
   weight = 30
-[[menus.main]]
+[[languages.zh-cn.menus.main]]
   name = '咨询网站 ↗'
   url = 'https://wisdawn-consult.cn/'
   weight = 35
-[[menus.main]]
+[[languages.zh-cn.menus.main]]
   name = '联系'
+  pageRef = '/contact'
+  weight = 40
+
+[[languages.en.menus.main]]
+  name = 'Home'
+  pageRef = '/'
+  weight = 10
+[[languages.en.menus.main]]
+  name = 'Projects'
+  pageRef = '/projects'
+  weight = 20
+[[languages.en.menus.main]]
+  name = 'About'
+  pageRef = '/about'
+  weight = 30
+[[languages.en.menus.main]]
+  name = 'Consulting ↗'
+  url = 'https://wisdawn-consult.cn/'
+  weight = 35
+[[languages.en.menus.main]]
+  name = 'Contact'
   pageRef = '/contact'
   weight = 40
 

@@ -1,0 +1,131 @@
+{
+  "hero_label": {
+    "other": "NICOLE CHEN / 运筹 · 数据 · 系统"
+  },
+  "hero_title": {
+    "other": "把优化模型，<br>带进<span class=\"accent-text\">真实业务。</span>"
+  },
+  "hero_intro": {
+    "other": "你好，我是 Nicole。<br>我关注如何把优化模型真正落地到真实业务中，<br class=\"desktop-break\">帮助企业在复杂约束下做出更优决策。"
+  },
+  "explore_projects": {
+    "other": "探索我的项目"
+  },
+  "meet_me": {
+    "other": "认识我"
+  },
+  "manufacturing": {
+    "other": "制造与供应链"
+  },
+  "optimization": {
+    "other": "运筹优化"
+  },
+  "modeling": {
+    "other": "数据建模"
+  },
+  "portrait_alt": {
+    "other": "Nicole 站在绿色山坡前"
+  },
+  "define": {
+    "other": "从问题定义"
+  },
+  "formulate": {
+    "other": "数学建模"
+  },
+  "solve": {
+    "other": "优化求解"
+  },
+  "deliver": {
+    "other": "系统落地"
+  },
+  "selected_title": {
+    "other": "一些实践，一路探索。"
+  },
+  "all_projects": {
+    "other": "全部 7 个项目"
+  },
+  "about_title": {
+    "other": "连接模型，<br>也连接业务。"
+  },
+  "about_intro": {
+    "other": "相比单纯做算法实现，我更擅长站在业务视角设计整体解决方案，将数学模型、系统逻辑和实际运营需求结合起来。"
+  },
+  "experience_link": {
+    "other": "完整经历与技能"
+  },
+  "present": {
+    "other": "2026.03 — 至今"
+  },
+  "education": {
+    "other": "教育背景"
+  },
+  "edinburgh": {
+    "other": "爱丁堡大学"
+  },
+  "msc": {
+    "other": "运筹学与数据科学硕士"
+  },
+  "nanjing": {
+    "other": "南京大学"
+  },
+  "maths": {
+    "other": "本科 · 数学"
+  },
+  "consulting_label": {
+    "other": "MY OTHER WORK / 我做的咨询网站"
+  },
+  "consulting_title": {
+    "other": "智造纵深咨询 Agent"
+  },
+  "consulting_description": {
+    "other": "面向供应链与制造业项目，从业务调研、需求梳理，到可行性分析与落地建议。<br>把项目想清楚，再往下走。"
+  },
+  "discovery": {
+    "other": "业务调研"
+  },
+  "requirements": {
+    "other": "需求梳理"
+  },
+  "feasibility": {
+    "other": "可行性分析"
+  },
+  "implementation": {
+    "other": "落地建议"
+  },
+  "visit_consulting": {
+    "other": "访问咨询网站"
+  },
+  "consulting_language": {
+    "other": "中文网站"
+  },
+  "contact_title": {
+    "other": "一起聊聊，下一个可能。"
+  },
+  "contact_description": {
+    "other": "关于优化、数据，以及把想法变成可运行的系统。"
+  },
+  "contact_nicole": {
+    "other": "联系 Nicole"
+  },
+  "back_projects": {
+    "other": "全部项目"
+  },
+  "toc": {
+    "other": "本页目录"
+  },
+  "toc_label": {
+    "other": "文章目录"
+  },
+  "article_contact": {
+    "other": "对这个方向感兴趣？欢迎交流。"
+  },
+  "project_count": {
+    "other": "7 个项目系列"
+  },
+  "case_count": {
+    "other": "8 篇案例详解"
+  },
+  "exploring": {
+    "other": "持续探索中"
+  }
+}
