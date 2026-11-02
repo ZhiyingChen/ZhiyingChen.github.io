@@ -20,7 +20,13 @@ showTableOfContents = true
 
 ### Data Expert of Manufacturing Operations — Meta | March 2026 – Present
 
-- Design and develop production-related systems with AI assistance.
+- **Manufacturing Operations Digitalization & Systems Development**
+
+- **Manufacturing Systems Ownership & Solution Design:** Led the development of an APS-centered production operations data system, standardizing demand, material, capacity, and actual output data, with robust validation, version control, and traceability. Drove MES actual output integration and CTB workflow alignment, while translating complex production planning challenges, material constraints, and capacity allocation requirements into practical and explainable system solutions.
+
+- **Digital Product & Tool Development:** Independently designed and developed production planning analytics tools for plan version comparison and multi-level BOM analysis, enabling root-cause identification of material shortages and capacity constraints. Also independently developed a Campus Planning System using FastAPI, React/TypeScript, and PostgreSQL, featuring multi-vendor campus planning visualization and multi-tenant access control.
+
+- **Cross-functional Collaboration & Delivery Management:** Coordinated external development teams and cross-functional stakeholders across production planning, materials, factory operations, and IT. Managed requirements, solution reviews, prioritization, delivery milestones, and acceptance criteria to ensure delivery quality and successful business adoption amid evolving requirements.
 
 ### Data Scientist — Air Products | September 2024 – March 2026
 
