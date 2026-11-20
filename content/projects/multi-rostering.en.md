@@ -11,7 +11,7 @@ visual = "routing"
 tags = ["ALNS", "Heterogeneous fleets", "Combinatorial optimization"]
 weight = 35
 portfolio = true
-demo_url = "https://huggingface.co/spaces/zhiyingchen/multiple-rostering-app"
+demo_url = "http://43.163.3.74/double-rostering/"
 aliases = ["/cases/multi-fleet-alns/"]
 +++
 
@@ -74,4 +74,4 @@ The framework supports logistics and operational-service settings with multiple 
 
 ## Try the application
 
-[Open the multiple-fleet rotation demo](https://huggingface.co/spaces/zhiyingchen/multiple-rostering-app)
+[Open the multiple-fleet rotation demo](http://43.163.3.74/double-rostering/)

@@ -11,7 +11,7 @@ visual = "routing"
 tags = ["ALNS", "多车种", "组合优化"]
 weight = 35
 portfolio = true
-demo_url = "https://huggingface.co/spaces/zhiyingchen/multiple-rostering-app"
+demo_url = "http://43.163.3.74/double-rostering/"
 aliases = ["/cases/multi-fleet-alns/"]
 +++
 
@@ -138,7 +138,7 @@ aliases = ["/cases/multi-fleet-alns/"]
 
 ### 🔗 项目demo链接
 
-👉 [点击查看网页demo](https://huggingface.co/spaces/zhiyingchen/multiple-rostering-app)
+👉 [点击查看网页demo](http://43.163.3.74/double-rostering/)
 
 ---
 
