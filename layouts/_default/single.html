@@ -6,6 +6,7 @@
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="detail-description">{{ . }}</p>{{ end }}
     {{ with .Params.tags }}<div class="card-tags article-tags">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
+    {{ with .Params.demo_url }}<div class="detail-actions"><a class="button-primary demo-button" href="{{ . | safeURL }}" target="_blank" rel="noopener noreferrer">{{ i18n "open_demo" }} <span aria-hidden="true">↗</span></a><span>{{ i18n "demo_new_window" }}</span></div>{{ end }}
   </header>
   <div class="reading-layout {{ if eq .Params.showTableOfContents false }}without-toc{{ end }}">
     <div class="article-content prose dark:prose-invert">{{ .Content }}</div>

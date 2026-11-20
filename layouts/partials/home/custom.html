@@ -17,10 +17,22 @@
 
 <div class="focus-strip"><span>{{ i18n "define" }}</span><span aria-hidden="true">→</span><span>{{ i18n "formulate" }}</span><span aria-hidden="true">→</span><span>{{ i18n "solve" }}</span><span aria-hidden="true">→</span><span>{{ i18n "deliver" }}</span></div>
 
+{{ $portfolio := (where .Site.RegularPages "Params.portfolio" true).ByWeight }}
+{{ $demoProjects := where $portfolio "Params.demo_url" "ne" nil }}
+{{ $otherProjects := where $portfolio "Params.demo_url" "eq" nil }}
+<section class="home-section demo-section" aria-labelledby="demos-title">
+  <div class="section-heading"><div><p class="eyebrow">LIVE DEMOS</p><h2 id="demos-title">{{ i18n "demo_title" }}</h2><p class="section-intro">{{ i18n "demo_intro" }}</p></div><a class="text-link" href="{{ `projects/` | relLangURL }}">{{ i18n "all_projects" }} <span aria-hidden="true">↗</span></a></div>
+  <div class="project-grid demo-grid">
+    {{ range $demoProjects }}
+      {{ partial "project-card.html" . }}
+    {{ end }}
+  </div>
+</section>
+
 <section class="home-section" aria-labelledby="projects-title">
   <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2 id="projects-title">{{ i18n "selected_title" }}</h2></div><a class="text-link" href="{{ `projects/` | relLangURL }}">{{ i18n "all_projects" }} <span aria-hidden="true">↗</span></a></div>
   <div class="project-grid featured-grid">
-    {{ range first 3 (where .Site.RegularPages "Params.portfolio" true).ByWeight }}
+    {{ range first 3 $otherProjects }}
       {{ partial "project-card.html" . }}
     {{ end }}
   </div>

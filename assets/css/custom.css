@@ -266,6 +266,25 @@ a:focus-visible,button:focus-visible {
   padding-bottom:5px;
 }
 
+.section-intro {
+  max-width:590px;
+  margin:10px 0 0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.8;
+}
+
+.demo-section {
+  padding:44px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:linear-gradient(145deg,var(--soft),var(--card));
+}
+
+.demo-grid {
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+
 .project-grid {
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
@@ -350,6 +369,21 @@ a:focus-visible,button:focus-visible {
   top:12px;
   color:inherit;
   font-size:19px;
+}
+
+.demo-badge {
+  position:absolute;
+  top:13px;
+  left:15px;
+  padding:5px 9px;
+  border:1px solid currentColor;
+  border-radius:999px;
+  background:color-mix(in srgb,var(--card) 88%,transparent);
+  font-size:9px;
+  font-weight:650;
+  letter-spacing:.7px;
+  line-height:1;
+  text-transform:uppercase;
 }
 
 .art-steel {
@@ -737,6 +771,22 @@ a:focus-visible,button:focus-visible {
   padding:3px 9px;
 }
 
+.detail-actions {
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-top:25px;
+}
+
+.detail-actions>span {
+  color:var(--muted);
+  font-size:11px;
+}
+
+.demo-button {
+  text-decoration:none;
+}
+
 .reading-layout {
   display:grid;
   grid-template-columns:minmax(0,1fr) 224px;
@@ -1050,6 +1100,10 @@ html.dark {
 }
 
 @media(max-width:767px) {
+  .demo-section {
+    padding:30px;
+  }
+
   body {
     padding:0 23px!important;
   }
@@ -1237,6 +1291,10 @@ html.dark {
 }
 
 @media(max-width:540px) {
+  .demo-section {
+    padding:24px 18px;
+  }
+
   .home-hero {
     grid-template-columns:1fr;
     gap:35px;

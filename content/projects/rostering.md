@@ -1,5 +1,5 @@
 +++
-title = "汽车轮转与维修调度优化模型（1）单车种、维修错峰、最小车辆数"
+title = "单车种轮转与维修排班优化"
 date = "2025-06-02T04:11:13.438000+00:00"
 lastmod = "2026-05-09T05:49:40.217000+00:00"
 source_id = "206891a4-bd54-8051-af47-d464a5fd57a9"
@@ -9,10 +9,10 @@ summary = "单车种条件下的车辆轮转与维修错峰，探索满足持续
 eyebrow = "车辆轮转"
 visual = "routing"
 tags = ["维修错峰", "车辆轮转", "菱形算法"]
-weight = 100
-portfolio = false
-series_parent = "/projects/vehicle-scheduling/"
-series_title = "车辆轮转与维修调度优化系列"
+weight = 30
+portfolio = true
+demo_url = "http://43.163.3.74/rostering/"
+aliases = ["/cases/single-fleet/", "/projects/vehicle-scheduling/"]
 +++
 
 ## 🧩 项目背景

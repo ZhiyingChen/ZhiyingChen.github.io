@@ -41,8 +41,23 @@
   "selected_title": {
     "other": "一些实践，一路探索。"
   },
+  "demo_title": {
+    "other": "可以直接体验的优化项目。"
+  },
+  "demo_intro": {
+    "other": "从模型到交互应用，打开 Demo 看看它们如何工作。"
+  },
+  "demo_available": {
+    "other": "在线 Demo"
+  },
+  "open_demo": {
+    "other": "打开在线 Demo"
+  },
+  "demo_new_window": {
+    "other": "将在新窗口打开"
+  },
   "all_projects": {
-    "other": "全部 7 个项目"
+    "other": "全部 8 个项目"
   },
   "about_title": {
     "other": "连接模型，<br>也连接业务。"
@@ -120,10 +135,10 @@
     "other": "对这个方向感兴趣？欢迎交流。"
   },
   "project_count": {
-    "other": "7 个项目系列"
+    "other": "8 个项目"
   },
   "case_count": {
-    "other": "8 篇案例详解"
+    "other": "6 篇案例详解"
   },
   "exploring": {
     "other": "持续探索中"

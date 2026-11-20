@@ -1,5 +1,5 @@
 +++
-title = "Fleet Rotation I: Single-Type Maintenance Scheduling"
+title = "Single-Type Fleet Rotation & Rostering"
 date = "2025-06-02T04:11:13.438000+00:00"
 lastmod = "2026-05-09T05:49:40.217000+00:00"
 source_id = "206891a4-bd54-8051-af47-d464a5fd57a9"
@@ -9,10 +9,10 @@ summary = "Staggering maintenance and finding the minimum fleet size required to
 eyebrow = "Fleet rotation"
 visual = "routing"
 tags = ["Staggered maintenance", "Fleet rotation", "Diamond algorithm"]
-weight = 100
-portfolio = false
-series_parent = "/projects/vehicle-scheduling/"
-series_title = "Fleet Rotation & Maintenance Scheduling"
+weight = 30
+portfolio = true
+demo_url = "http://43.163.3.74/rostering/"
+aliases = ["/cases/single-fleet/", "/projects/vehicle-scheduling/"]
 +++
 
 ## Project background

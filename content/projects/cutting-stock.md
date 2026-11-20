@@ -11,6 +11,7 @@ visual = "cutting"
 tags = ["列生成", "Pyomo", "切割优化"]
 weight = 40
 portfolio = true
+demo_url = "http://43.163.3.74/column-generation/"
 +++
 
 ## 🧩 项目背景

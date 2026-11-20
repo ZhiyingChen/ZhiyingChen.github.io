@@ -66,7 +66,8 @@ showTableOfContents = true
 
 - [Master Production Planning & Manufacturing Coordination](/projects/manufacturing-planning/)
 - [Raw Materials & Ironmaking Optimization](/projects/steel-optimization/)
-- [Fleet Rotation & Maintenance Scheduling](/projects/vehicle-scheduling/)
+- [Single-Type Fleet Rotation & Rostering](/projects/rostering/)
+- [Multi-Fleet Rostering with ALNS](/projects/multi-rostering/)
 - [Cutting Stock & Column Generation](/projects/cutting-stock/)
 - [Warehouse Network & Facility Location](/projects/warehouse-location/)
 - [Mapping Afforestation, Clouds & Rainfall](/projects/climate-mapping/)

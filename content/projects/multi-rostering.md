@@ -1,5 +1,5 @@
 +++
-title = "汽车轮转与维修调度优化模型（2）多车种、任务组合、ALNS 扩展"
+title = "多车种轮转与 ALNS 排班优化"
 date = "2025-06-02T10:35:47.659000+00:00"
 lastmod = "2026-05-09T05:49:34.960000+00:00"
 source_id = "206891a4-bd54-8033-87c8-eb0d841bbe3a"
@@ -9,10 +9,10 @@ summary = "将单车种调度扩展到多车种与任务组合，并结合 ALNS 
 eyebrow = "车辆轮转"
 visual = "routing"
 tags = ["ALNS", "多车种", "组合优化"]
-weight = 100
-portfolio = false
-series_parent = "/projects/vehicle-scheduling/"
-series_title = "车辆轮转与维修调度优化系列"
+weight = 35
+portfolio = true
+demo_url = "https://huggingface.co/spaces/zhiyingchen/multiple-rostering-app"
+aliases = ["/cases/multi-fleet-alns/"]
 +++
 
 ### 🧩 项目背景
@@ -84,7 +84,7 @@ series_title = "车辆轮转与维修调度优化系列"
 
 - 被封装为 <code>car_type.get_car_num4specified_serve(...)</code> 等方法，在主框架中调用。
 
-参考之前的 [汽车轮转与维修调度优化模型（1）单车种、维修错峰、最小车辆数](/cases/single-fleet/)
+参考之前的 [单车种轮转与维修排班优化](/projects/rostering/)
 
 #### 🔹 2. ALNS（Adaptive Large Neighborhood Search）
 

@@ -76,7 +76,9 @@ showTableOfContents = true
 
 - [钢铁原料与冶炼优化系列](/projects/steel-optimization/)
 
-- [车辆轮转与维修调度优化系列](/projects/vehicle-scheduling/)
+- [单车种轮转与维修排班优化](/projects/rostering/)
+
+- [多车种轮转与 ALNS 排班优化](/projects/multi-rostering/)
 
 - [切割优化与列生成算法](/projects/cutting-stock/)
 

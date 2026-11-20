@@ -1,5 +1,5 @@
 +++
-title = "Fleet Rotation II: Multiple Types & ALNS"
+title = "Multi-Fleet Rostering with ALNS"
 date = "2025-06-02T10:35:47.659000+00:00"
 lastmod = "2026-05-09T05:49:34.960000+00:00"
 source_id = "206891a4-bd54-8033-87c8-eb0d841bbe3a"
@@ -9,17 +9,17 @@ summary = "Extending single-type rotation to heterogeneous fleets and task combi
 eyebrow = "Fleet rotation"
 visual = "routing"
 tags = ["ALNS", "Heterogeneous fleets", "Combinatorial optimization"]
-weight = 100
-portfolio = false
-series_parent = "/projects/vehicle-scheduling/"
-series_title = "Fleet Rotation & Maintenance Scheduling"
+weight = 35
+portfolio = true
+demo_url = "https://huggingface.co/spaces/zhiyingchen/multiple-rostering-app"
+aliases = ["/cases/multi-fleet-alns/"]
 +++
 
 ## Project background
 
 Large campuses and logistics operations often use several vehicle types with different travel, service, and maintenance characteristics. They must maintain hourly coverage while respecting availability, working-time, and safety rules.
 
-This project extends the [single-type fleet rotation model](/cases/single-fleet/) to **heterogeneous fleets**, combining the staggered-maintenance subroutine with **adaptive large neighborhood search (ALNS)** to search vehicle-type allocations.
+This project extends the [single-type fleet rotation model](/projects/rostering/) to **heterogeneous fleets**, combining the staggered-maintenance subroutine with **adaptive large neighborhood search (ALNS)** to search vehicle-type allocations.
 
 ## Problem definition
 

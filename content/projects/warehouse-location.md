@@ -11,6 +11,7 @@ visual = "warehouse"
 tags = ["仓网规划", "选址模型", "交互应用"]
 weight = 50
 portfolio = true
+demo_url = "http://43.163.3.74/warehouse/"
 +++
 
 ## 概述
@@ -153,7 +154,7 @@ portfolio = true
 
 你可以在这里查看交互版本 demo：
 
-[<strong>Hugging Face Demo</strong>](http://43.163.3.74/warehouse/)
+[<strong>打开在线 Demo</strong>](http://43.163.3.74/warehouse/)
 
 ![项目插图](/media/35b891a4-a1860f0dde.ico "inline-icon")
 

@@ -11,6 +11,7 @@ visual = "cutting"
 tags = ["Column generation", "Pyomo", "Cutting stock"]
 weight = 40
 portfolio = true
+demo_url = "http://43.163.3.74/column-generation/"
 +++
 
 ## Project background

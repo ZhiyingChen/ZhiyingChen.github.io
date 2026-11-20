@@ -11,6 +11,7 @@ visual = "warehouse"
 tags = ["Network planning", "Facility location", "Interactive application"]
 weight = 50
 portfolio = true
+demo_url = "http://43.163.3.74/warehouse/"
 +++
 
 ## Project background
