@@ -89,6 +89,6 @@ In the reported run, **five vehicles covered the full 30-day service horizon**.
 
 ## Try the application
 
-[Open the fleet-rotation demo](https://huggingface.co/spaces/zhiyingchen/rostering-app)
+[Open the fleet-rotation demo](http://43.163.3.74/rostering/)
 
 The approach connects continuous service with maintenance planning and can be extended to personnel shifts, security coverage, and after-sales service scheduling.

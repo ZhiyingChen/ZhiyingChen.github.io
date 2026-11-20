@@ -86,7 +86,7 @@ The `Context` class organizes the following steps:
 
 ## Try the application
 
-[Open the interactive cutting-stock demo](https://huggingface.co/spaces/zhiyingchen/column-generation-app)
+[Open the interactive cutting-stock demo](http://43.163.3.74/column-generation/)
 
 ## Applications
 

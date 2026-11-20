@@ -78,6 +78,6 @@ The goal was to make the model reusable and its recommendations understandable t
 
 ## Try the application
 
-[Open the warehouse planning demo](https://huggingface.co/spaces/zhiyingchen/warehouse_management_app)
+[Open the warehouse planning demo](http://43.163.3.74/warehouse/)
 
 The workflow can support multi-city planning in e-commerce, consumer goods, and logistics, as well as teaching and research.

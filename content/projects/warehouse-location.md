@@ -153,7 +153,7 @@ portfolio = true
 
 你可以在这里查看交互版本 demo：
 
-[<strong>Hugging Face Demo</strong>](https://huggingface.co/spaces/zhiyingchen/warehouse_management_app)
+[<strong>Hugging Face Demo</strong>](http://43.163.3.74/warehouse/)
 
 ![项目插图](/media/35b891a4-a1860f0dde.ico "inline-icon")
 

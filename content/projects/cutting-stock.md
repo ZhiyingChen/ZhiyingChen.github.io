@@ -131,7 +131,7 @@ portfolio = true
 
 ## 🔗 项目地址
 
-👉 [点击查看网页 demo ](https://huggingface.co/spaces/zhiyingchen/column-generation-app)
+👉 [点击查看网页 demo ](http://43.163.3.74/column-generation/)
 
 ---
 

@@ -155,7 +155,7 @@ while t<=t1:
 
 ## 🔗 项目网页demo
 
-👉 [点击查看网页demo](https://huggingface.co/spaces/zhiyingchen/rostering-app)
+👉 [点击查看网页demo](http://43.163.3.74/rostering/)
 
 ---
 
