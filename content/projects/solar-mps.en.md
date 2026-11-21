@@ -11,8 +11,17 @@ visual = "planning"
 tags = ["MPS", "Photovoltaics", "Capacity planning"]
 weight = 15
 portfolio = true
+demo_url = "/demos/solar-mps/"
 aliases = ["/cases/solar-mps/"]
 +++
+
+## Interactive demo
+
+👉 [Open Solar Studio · Photovoltaic production planning](/demos/solar-mps/)
+
+Explore crystal-growth and wafer-slicing planning through problem definition, configuration, results, and methodology. Switch between standard delivery, urgent orders, and constrained slicing capacity; edit order CSV and equipment parameters; inspect daily active equipment, inventory, and fulfillment; export JSON or CSV. The workspace is in Chinese, uses fictional data, and runs locally in your browser.
+
+The interactive version uses a single-product beam-search heuristic with fixed capacities and yields; it does not guarantee global optimality. It demonstrates full-output operation, material flow, first-day capacity discounts, and minimum runs, with safety stock treated as a soft target. Monthly process parameters, multiple inventory points, and organization-level balancing from the industrial model are outside this demo. Historical project KPIs below are separate from demo results.
 
 ## Project background
 
