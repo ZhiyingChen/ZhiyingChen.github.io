@@ -11,8 +11,17 @@ visual = "steel"
 tags = ["烧结", "配料优化", "成本优化"]
 weight = 25
 portfolio = true
+demo_url = "/demos/sintering-management/"
 aliases = ["/cases/sintering-management/", "/projects/steel-optimization/"]
 +++
+
+## 在线交互 Demo
+
+👉 [打开 Sinter Studio · 烧结配料优化工作台](/demos/sintering-management/)
+
+参考切割优化工作台的交互形式，按「问题说明 → 配置运行 → 结果展示 → 算法说明」体验烧结配料。修改虚构原料价格、水分、烧损、配比边界及成分约束，比较原料配方、单位烧结矿干基投入与成本，并查看逐项指标校验。支持 CSV 导入、配料 CSV 和完整 JSON 导出，计算在浏览器本地完成。
+
+交互版展示单批次、七项化学成分和三项比值，保留原项目的干基、烧存及成分脱除公式；在正分母条件下通过等价线性规划求解，再按原始公式复核。原 Python 项目的 SLSQP / basinhopping、多候选解、全部微量元素及 Excel 回写不包含在网页中。原代码称作“三元碱度”的指标在网页明确写为 Al₂O₃ / SiO₂。示例数据与价格均为虚构。
 
 ## 一句话概述
 

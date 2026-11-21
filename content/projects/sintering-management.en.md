@@ -11,8 +11,17 @@ visual = "steel"
 tags = ["Sintering", "Blending optimization", "Cost optimization"]
 weight = 25
 portfolio = true
+demo_url = "/demos/sintering-management/?lang=en"
 aliases = ["/cases/sintering-management/", "/projects/steel-optimization/"]
 +++
+
+## Interactive demo
+
+[Open Sinter Studio · Sintering Blend Optimization](/demos/sintering-management/?lang=en)
+
+Edit synthetic material prices, moisture, ignition losses, blend limits and chemistry in a Chinese-language workspace. Compare blend proportions, dry-basis cost per tonne of sinter, and every quality constraint; export CSV or JSON. Computation runs locally in your browser.
+
+The demo retains the original dry-basis, retained-mass and component-removal formulas for a single batch with seven chemical components and three ratios. It solves an equivalent linear program under positive-denominator assumptions, then verifies the original formulas. The original Python model uses SLSQP / basinhopping and includes more chemical components and candidate solutions. The ratio called “ternary basicity” in the source is explicitly shown here as Al₂O₃ / SiO₂. All sample data and prices are fictional.
 
 ## Overview
 
