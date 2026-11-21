@@ -8,11 +8,20 @@ description = "面向原料混矿场景，结合品位、成本与业务约束�
 summary = "面向原料混矿场景，结合品位、成本与业务约束进行配比决策。"
 eyebrow = "混矿优化"
 visual = "steel"
+demo_url = "/demos/mixed-mine-management/"
 tags = ["混矿", "原料管理", "优化建模"]
 weight = 30
 portfolio = true
 aliases = ["/cases/mixed-mine-management/"]
 +++
+
+## 交互式 Demo
+
+👉 [打开 Ore Studio · 混矿优化工作台](/demos/mixed-mine-management/)
+
+参考 Column Studio 的四步工作流：了解问题 → 配置与运行 → 查看结果 → 算法说明。可编辑矿种湿基价格、干配上下限及六项成分，导入原料 CSV，调整混合矿质量边界和干矿批量，查看干湿配比、质量核验与采购成本，并导出 CSV / JSON。教学数据为虚构数据，计算在浏览器本地完成。
+
+网页沿用原项目的干湿基换算与吨铁成本公式，采用 Charnes–Cooper 变换与两阶段单纯形求解连续配比模型；原 Python 使用 SLSQP / basinhopping。当前 Demo 覆盖 TFe、SiO₂、Al₂O₃、P、S、H₂O 六项，不包含其他微量元素、整数投料、库存或多方案搜索。界面吨铁成本使用元/吨铁，等于原代码「干基价 / TFe 百分数」的 100 倍。
 
 ## 一句话概述
 

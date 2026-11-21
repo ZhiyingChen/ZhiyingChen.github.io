@@ -8,11 +8,20 @@ description = "Selecting raw-material proportions by balancing grade, cost, and 
 summary = "Selecting raw-material proportions by balancing grade, cost, and operational requirements."
 eyebrow = "Ore blending"
 visual = "steel"
+demo_url = "/demos/mixed-mine-management/"
 tags = ["Ore blending", "Raw materials", "Optimization modeling"]
 weight = 30
 portfolio = true
 aliases = ["/cases/mixed-mine-management/"]
 +++
+
+## Interactive demo
+
+[Open Ore Studio · Ore Blending Optimization](/demos/mixed-mine-management/) — the workspace currently uses Chinese labels.
+
+Following the Column Studio workflow, edit wet-basis prices, dry-share bounds and six chemical components, import material CSV, set quality limits and dry batch size, and inspect blend proportions, constraint checks and procurement costs. Export the plan as CSV or the complete result as JSON. All sample data is fictional and calculations run locally in the browser.
+
+The demo retains the original dry/wet conversion and iron-cost formulas, using a Charnes–Cooper transformation and two-phase simplex for the continuous blend model; the original Python uses SLSQP / basinhopping. It covers TFe, SiO₂, Al₂O₃, P, S and H₂O, with no other trace elements, integer dosing, inventory or alternative-solution search. Displayed cost per tonne of iron is 100 times the original code's dry-price / TFe-percentage value.
 
 ## Overview
 
