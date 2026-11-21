@@ -9,10 +9,9 @@ summary = "Scheduling mixed-model battery production under changeover rules, ram
 eyebrow = "Battery manufacturing"
 visual = "planning"
 tags = ["MIP", "Pyomo", "CPLEX"]
-weight = 100
-portfolio = false
-series_parent = "/projects/manufacturing-planning/"
-series_title = "Master Production Planning & Manufacturing Coordination"
+weight = 10
+portfolio = true
+aliases = ["/cases/battery-scheduling/", "/projects/manufacturing-planning/"]
 +++
 
 ## Project background

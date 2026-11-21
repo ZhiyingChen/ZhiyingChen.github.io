@@ -9,10 +9,9 @@ summary = "Minimizing cost per tonne of hot metal through coordinated raw-materi
 eyebrow = "Iron & steel"
 visual = "steel"
 tags = ["Ore blending", "Sintering & ironmaking", "Cost minimization"]
-weight = 100
-portfolio = false
-series_parent = "/projects/steel-optimization/"
-series_title = "Raw Materials & Ironmaking Optimization"
+weight = 35
+portfolio = true
+aliases = ["/cases/integrated-steel/"]
 +++
 
 ## Overview

@@ -9,10 +9,9 @@ summary = "面向原料混矿场景，结合品位、成本与业务约束进行
 eyebrow = "混矿优化"
 visual = "steel"
 tags = ["混矿", "原料管理", "优化建模"]
-weight = 100
-portfolio = false
-series_parent = "/projects/steel-optimization/"
-series_title = "钢铁原料与冶炼优化系列"
+weight = 30
+portfolio = true
+aliases = ["/cases/mixed-mine-management/"]
 +++
 
 ## 一句话概述

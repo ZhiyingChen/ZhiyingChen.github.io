@@ -72,9 +72,17 @@ showTableOfContents = true
 
 ## 🚀 项目
 
-- [主生产计划（MPS）与制造协同优化系列](/projects/manufacturing-planning/)
+- [锂电池智能制造排程优化系统](/projects/battery-scheduling/)
 
-- [钢铁原料与冶炼优化系列](/projects/steel-optimization/)
+- [光伏行业主生产计划（MPS）优化项目](/projects/solar-mps/)
+
+- [主计划优化模型（家电行业）](/projects/appliance-mps/)
+
+- [烧结优化模型](/projects/sintering-management/)
+
+- [混矿优化模型](/projects/mixed-mine-management/)
+
+- [钢铁配矿与烧结炼铁一体化优化](/projects/integrated-steel/)
 
 - [单车种轮转与维修排班优化](/projects/rostering/)
 

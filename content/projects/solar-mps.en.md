@@ -9,10 +9,9 @@ summary = "Coordinating crystal growth and wafer slicing with equipment states, 
 eyebrow = "Photovoltaic manufacturing"
 visual = "planning"
 tags = ["MPS", "Photovoltaics", "Capacity planning"]
-weight = 100
-portfolio = false
-series_parent = "/projects/manufacturing-planning/"
-series_title = "Master Production Planning & Manufacturing Coordination"
+weight = 15
+portfolio = true
+aliases = ["/cases/solar-mps/"]
 +++
 
 ## Project background

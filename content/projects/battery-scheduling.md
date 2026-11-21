@@ -9,10 +9,9 @@ summary = "在高精度、多型号混线生产场景中，结合换型规则、
 eyebrow = "锂电制造"
 visual = "planning"
 tags = ["MIP", "Pyomo", "CPLEX"]
-weight = 100
-portfolio = false
-series_parent = "/projects/manufacturing-planning/"
-series_title = "主生产计划（MPS）与制造协同优化系列"
+weight = 10
+portfolio = true
+aliases = ["/cases/battery-scheduling/", "/projects/manufacturing-planning/"]
 +++
 
 ## <strong>🔍 项目背景</strong>

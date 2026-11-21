@@ -9,10 +9,9 @@ summary = "Optimizing raw-material blends and costs in the sintering process und
 eyebrow = "Sintering"
 visual = "steel"
 tags = ["Sintering", "Blending optimization", "Cost optimization"]
-weight = 100
-portfolio = false
-series_parent = "/projects/steel-optimization/"
-series_title = "Raw Materials & Ironmaking Optimization"
+weight = 25
+portfolio = true
+aliases = ["/cases/sintering-management/", "/projects/steel-optimization/"]
 +++
 
 ## Overview

@@ -57,7 +57,7 @@
     "other": "Opens in a new window"
   },
   "all_projects": {
-    "other": "All 8 projects"
+    "other": "All 12 projects"
   },
   "about_title": {
     "other": "Connecting models<br> with business."
@@ -135,10 +135,10 @@
     "other": "Interested in this work? Let’s talk."
   },
   "project_count": {
-    "other": "8 projects"
+    "other": "12 standalone projects"
   },
   "case_count": {
-    "other": "6 detailed case studies"
+    "other": "6 industry domains"
   },
   "exploring": {
     "other": "More to explore"

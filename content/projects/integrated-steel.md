@@ -9,10 +9,9 @@ summary = "以吨铁成本最小化为目标，联动烧结与炼铁工序的原
 eyebrow = "钢铁配矿"
 visual = "steel"
 tags = ["钢铁配矿", "烧结炼铁", "成本最小化"]
-weight = 100
-portfolio = false
-series_parent = "/projects/steel-optimization/"
-series_title = "钢铁原料与冶炼优化系列"
+weight = 35
+portfolio = true
+aliases = ["/cases/integrated-steel/"]
 +++
 
 ## 一句话概述

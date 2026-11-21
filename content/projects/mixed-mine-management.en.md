@@ -9,10 +9,9 @@ summary = "Selecting raw-material proportions by balancing grade, cost, and oper
 eyebrow = "Ore blending"
 visual = "steel"
 tags = ["Ore blending", "Raw materials", "Optimization modeling"]
-weight = 100
-portfolio = false
-series_parent = "/projects/steel-optimization/"
-series_title = "Raw Materials & Ironmaking Optimization"
+weight = 30
+portfolio = true
+aliases = ["/cases/mixed-mine-management/"]
 +++
 
 ## Overview

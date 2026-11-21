@@ -9,10 +9,9 @@ summary = "构建覆盖需求、BOM、采购、生产、库存与运输协同的
 eyebrow = "家电制造"
 visual = "planning"
 tags = ["MPS", "供应链", "库存平衡"]
-weight = 100
-portfolio = false
-series_parent = "/projects/manufacturing-planning/"
-series_title = "主生产计划（MPS）与制造协同优化系列"
+weight = 20
+portfolio = true
+aliases = ["/cases/appliance-mps/"]
 +++
 
 ## 📌 项目背景

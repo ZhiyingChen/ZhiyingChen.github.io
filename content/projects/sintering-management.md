@@ -9,10 +9,9 @@ summary = "面向烧结工序的原料与成本优化模型，结合工艺约束
 eyebrow = "烧结优化"
 visual = "steel"
 tags = ["烧结", "配料优化", "成本优化"]
-weight = 100
-portfolio = false
-series_parent = "/projects/steel-optimization/"
-series_title = "钢铁原料与冶炼优化系列"
+weight = 25
+portfolio = true
+aliases = ["/cases/sintering-management/", "/projects/steel-optimization/"]
 +++
 
 ## 一句话概述

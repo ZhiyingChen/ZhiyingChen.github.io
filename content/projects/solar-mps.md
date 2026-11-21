@@ -9,10 +9,9 @@ summary = "面向光伏拉晶与切片场景，把设备启停、工序能力耦
 eyebrow = "光伏制造"
 visual = "planning"
 tags = ["MPS", "光伏", "产能规划"]
-weight = 100
-portfolio = false
-series_parent = "/projects/manufacturing-planning/"
-series_title = "主生产计划（MPS）与制造协同优化系列"
+weight = 15
+portfolio = true
+aliases = ["/cases/solar-mps/"]
 +++
 
 ## <strong>🌍 项目背景 </strong>

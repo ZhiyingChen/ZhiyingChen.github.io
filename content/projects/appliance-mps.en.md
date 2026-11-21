@@ -9,10 +9,9 @@ summary = "An extensible master planning model integrating demand, BOMs, procure
 eyebrow = "Appliance manufacturing"
 visual = "planning"
 tags = ["MPS", "Supply chains", "Inventory balance"]
-weight = 100
-portfolio = false
-series_parent = "/projects/manufacturing-planning/"
-series_title = "Master Production Planning & Manufacturing Coordination"
+weight = 20
+portfolio = true
+aliases = ["/cases/appliance-mps/"]
 +++
 
 ## Project background

@@ -64,8 +64,12 @@ showTableOfContents = true
 
 ## Projects
 
-- [Master Production Planning & Manufacturing Coordination](/projects/manufacturing-planning/)
-- [Raw Materials & Ironmaking Optimization](/projects/steel-optimization/)
+- [Intelligent Scheduling for Battery Manufacturing](/projects/battery-scheduling/)
+- [Master Production Planning for Photovoltaics](/projects/solar-mps/)
+- [Master Planning for Appliance Manufacturing](/projects/appliance-mps/)
+- [Sintering Optimization](/projects/sintering-management/)
+- [Ore Blending Optimization](/projects/mixed-mine-management/)
+- [Integrated Sintering & Ironmaking Optimization](/projects/integrated-steel/)
 - [Single-Type Fleet Rotation & Rostering](/projects/rostering/)
 - [Multi-Fleet Rostering with ALNS](/projects/multi-rostering/)
 - [Cutting Stock & Column Generation](/projects/cutting-stock/)
