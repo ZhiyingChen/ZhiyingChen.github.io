@@ -11,8 +11,17 @@ visual = "steel"
 tags = ["钢铁配矿", "烧结炼铁", "成本最小化"]
 weight = 35
 portfolio = true
+demo_url = "/demos/integrated-steel/"
 aliases = ["/cases/integrated-steel/"]
 +++
+
+## 交互演示
+
+👉 [打开 Ore Studio · 一体化配矿工作台](/demos/integrated-steel/)
+
+沿用 Column Studio 的四步流程，先理解问题，再编辑原料价格、成分、配比上限与质量约束，运行后查看烧结配比、球团与高炉炉料结构、成本拆解和约束校验，并导出 CSV / JSON。无需登录，计算在浏览器内完成。
+
+演示使用虚构数据和简化离散模型：矿粉与炉料按 5% 步长、球团内部按 25% 步长枚举，配合固定收得率、简化铁平衡与燃耗关系，不保证连续域全局最优。原项目的完整成分平衡、返粉和 Grid / GRASP + SLSQP 由独立 Python Web 服务支持，需本地启动。下文历史项目业绩与演示结果相互独立。
 
 ## 一句话概述
 

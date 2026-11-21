@@ -11,8 +11,17 @@ visual = "steel"
 tags = ["Ore blending", "Sintering & ironmaking", "Cost minimization"]
 weight = 35
 portfolio = true
+demo_url = "/demos/integrated-steel/"
 aliases = ["/cases/integrated-steel/"]
 +++
+
+## Interactive demo
+
+[Open Ore Studio · Integrated ore blending](/demos/integrated-steel/) — the workspace currently uses Chinese labels.
+
+Following the Column Studio workflow, explore the problem, edit fictional ore prices and chemistry, set quality and availability limits, run a scenario, inspect blend proportions and cost breakdowns, and export CSV or JSON. Calculations run locally in the browser.
+
+The demonstration enumerates a simplified discrete model: 5% ore and burden increments and 25% internal pellet increments, with fixed yields and simplified iron balance and fuel relationships. It does not guarantee a continuous global optimum. Full chemistry, return fines, and the original Grid / GRASP + SLSQP solver require the project's separate Python Web service. Historical project outcomes below are independent of demo results.
 
 ## Overview
 
