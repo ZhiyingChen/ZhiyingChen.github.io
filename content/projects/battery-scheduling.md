@@ -11,8 +11,17 @@ visual = "planning"
 tags = ["MIP", "Pyomo", "CPLEX"]
 weight = 10
 portfolio = true
+demo_url = "/demos/battery-scheduling/"
 aliases = ["/cases/battery-scheduling/", "/projects/manufacturing-planning/"]
 +++
+
+## 在线交互 Demo
+
+👉 [打开 Battery Studio · 锂电制造排程工作台](/demos/battery-scheduling/)
+
+参考切割优化工作台的交互形式，按「问题说明 → 配置运行 → 结果展示 → 算法说明」体验排程。可以修改订单、并行产线、连续运行天数、换型损耗与爬坡比例，查看逐日产出、产线甘特图与订单履约，并导出 JSON / CSV。示例为虚构数据，计算在浏览器本地完成。
+
+网页使用简化的束搜索启发式模型，不保证全局最优；展示单线单型号、连续运行与换型爬坡等核心约束。原工业模型中的物料齐套、跨工序衔接、设备集群均衡与集合覆盖 MIP 不包含在本交互版中。以下历史项目数据与 KPI 并非此 Demo 的计算结果。
 
 ## <strong>🔍 项目背景</strong>
 

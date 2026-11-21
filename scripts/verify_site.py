@@ -111,6 +111,9 @@ def check_translations(public, documents, base_url, failures):
                 if target.netloc != urlparse(base_url).netloc or not target.path.startswith(prefix):
                     continue
                 suffix = target.path[len(prefix):]
+                # Standalone demo workspaces are shared by both site languages.
+                if suffix.startswith("demos/"):
+                    continue
                 target_file = public / suffix / "index.html"
                 if target_file in documents and not documents[target_file].redirect:
                     if suffix.startswith("en/") != (locale == "en-US"):

@@ -11,8 +11,17 @@ visual = "planning"
 tags = ["MIP", "Pyomo", "CPLEX"]
 weight = 10
 portfolio = true
+demo_url = "/demos/battery-scheduling/"
 aliases = ["/cases/battery-scheduling/", "/projects/manufacturing-planning/"]
 +++
+
+## Interactive demo
+
+[Open Battery Studio · Manufacturing Scheduling](/demos/battery-scheduling/)
+
+Explore the Chinese-language workspace: edit synthetic orders, parallel lines, minimum run length, changeover loss, and ramp-up capacity; inspect the daily schedule, production chart, and order fulfillment; export JSON or CSV. All calculations run locally in your browser.
+
+The demo uses a simplified beam-search heuristic and does not guarantee a global optimum. It covers one model per line per day, minimum continuous runs, changeovers, and ramp-up. Material availability, multi-stage routing, equipment-group balancing, and the original set-covering MIP are outside its scope. Historical project KPIs below are separate from the demo's computed results.
 
 ## Project background
 

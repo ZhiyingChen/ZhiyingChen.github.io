@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="锂电池混线生产排程交互工作台：配置订单、换型与爬坡产能，查看甘特图与交付结果。">
+  <title>Battery Studio · 锂电制造排程</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23132f2c'/%3E%3Cpath d='M12 11h16v22H12zM17 7h6v4h-6z' fill='%23c5ed9d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css"><script src="engine.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="#problem"><span class="brand-icon">ϟ</span><span>Battery<span class="light"> Studio</span><small>MANUFACTURING WORKSPACE</small></span></a>
+  <div class="workspace-label">工作流程 <span>01—04</span></div>
+  <nav aria-label="工作流程">
+    <a href="#problem" class="active"><span>◫</span>问题描述<small>01</small></a>
+    <a href="#inputs"><span>▤</span>配置与运行<small>02</small></a>
+    <a href="#results"><span>▥</span>结果展示<small>03</small></a>
+    <a href="#method"><span>◎</span>算法说明<small>04</small></a>
+  </nav>
+  <div class="sidebar-note"><span class="eyebrow">THE OBJECTIVE</span><h2>让每一次换型，<br>都值得。</h2><p>在产能、爬坡与交期之间，找到更好的生产节奏。</p><div class="battery-art" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div>
+  <div class="sidebar-footer"><i class="dot"></i><div><strong>浏览器本地计算</strong><small>无需登录 · 数据不上传</small></div></div>
+</aside>
+<main>
+  <header class="topbar"><span>生产优化 <b>/</b> <strong>锂电池混线排程</strong></span><a href="/projects/battery-scheduling/">项目介绍 ↗</a></header>
+  <section id="problem">
+    <div class="eyebrow green">01 / PROBLEM</div>
+    <h1>多型号订单，如何排出<br>更好的<em>生产节奏</em>？</h1>
+    <p class="intro">每次切换型号，产线都需要重新爬坡。提前生产会占用产能，频繁换型又可能错过交期。用一份可计算的排程，看看这些选择如何影响交付。</p>
+    <article class="hero">
+      <div><span class="pill">BATTERY MANUFACTURING</span><h2>订单在变化，<br>让产线有序运转。</h2><p>设置订单与产线参数，生成逐日生产安排，直观看到换型、爬坡和欠交。</p><a href="#inputs" class="button lime">开始配置 <span>↗</span></a></div>
+      <div class="hero-visual" aria-hidden="true"><div class="visual-label">PRODUCTION RHYTHM / 14 DAYS</div><div class="visual-row"><b>LINE 01</b><i class="v3 narrow"></i><i class="v3 mid"></i><i class="v3"></i><i class="v3"></i><i class="v4 narrow"></i><i class="v4 mid"></i><i class="v4"></i></div><div class="visual-row"><b>LINE 02</b><i class="v4 narrow"></i><i class="v4 mid"></i><i class="v4"></i><i class="v5 narrow"></i><i class="v5 mid"></i><i class="v5"></i><i class="v5"></i></div><div class="visual-bottom"><span>↗ 爬坡恢复</span><span>→ 稳定生产</span><span>↻ 型号切换</span></div></div>
+    </article>
+    <div class="definition-grid"><article class="card definition"><span>01</span><h3>一天，一个型号</h3><p>每条产线每天只安排一个型号，多条产线可并行生产。</p></article><article class="card definition"><span>02</span><h3>换型后逐步爬坡</h3><p>新开或重启型号触发爬坡；跨型号切换当天再扣除换型损耗。</p></article><article class="card definition"><span>03</span><h3>交付优先，也要稳定</h3><p>连续运行限制保持生产节奏；订单按交期优先分配当日产出。</p></article></div>
+  </section>
+  <section id="inputs">
+    <div class="section-heading"><div><div class="eyebrow green">02 / CONFIGURE & RUN</div><h2>把你的生产场景，放进来。</h2><p>从合成示例开始，也可以修改订单或导入自己的场景 JSON。</p></div><div class="actions"><button class="button secondary" id="reset">↺ 恢复示例</button><label class="button secondary file-button">↑ 导入 JSON<input id="import" type="file" accept=".json,application/json"></label></div></div>
+    <div class="input-grid">
+      <article class="card settings"><div class="card-heading"><div><h3>产线与工艺参数</h3><p>所有产线共享相同额定产能</p></div><span class="chip">SCENARIO</span></div>
+        <div class="fields">
+          <label>计划天数 <span>3–21 天</span><input id="days" type="number" min="3" max="21" required></label>
+          <label>并行产线 <span>1–3 条</span><input id="lines" type="number" min="1" max="3" required></label>
+          <label>单线额定日产能 <span>件 / 天</span><input id="capacity" type="number" min="1" max="100000" required></label>
+          <label>最少连续运行 <span>天 / 型号</span><input id="minRun" type="number" min="1" max="21" required></label>
+          <label class="wide">爬坡可用产能 <span>百分比，英文逗号分隔</span><input id="ramp" type="text" placeholder="30, 65, 85" required><small>示例：前三天 30%、65%、85%，第四天起 100%。</small></label>
+          <label>换型额外损耗 <span>%</span><input id="changeLoss" type="number" min="0" max="100" step="1" required></label>
+          <label>换型惩罚权重 <span>0–100000</span><input id="changeWeight" type="number" min="0" max="100000" step="1" required></label>
+        </div><label class="search-field">搜索宽度<select id="beam"><option value="60">快速 · 60</option><option value="160">标准 · 160</option><option value="200">精细 · 200</option></select></label>
+        <div class="note">额定产能 × 当天爬坡比例 ×（1 − 换型损耗）。首开与同型号重启仅扣爬坡；跨型号切换再扣换型损耗，经过空闲也保留上次型号。</div>
+      </article>
+      <article class="card orders-card"><div class="card-heading"><div><h3>客户订单</h3><p>最多 30 笔订单、3 个型号 · 优先级 5 最高</p></div><button class="button small secondary" id="addOrder">＋ 新增</button></div><div class="table-scroll"><table class="input-table"><thead><tr><th>订单编号</th><th>型号</th><th>数量 / 件</th><th>交期 / 第几天</th><th>优先级</th><th><span class="sr-only">操作</span></th></tr></thead><tbody id="orderRows"></tbody></table></div><div class="order-total" id="inputSummary"></div><div class="note">示例使用虚构订单，与真实客户、工厂及原项目数据无关。不同型号分别匹配订单；同型号订单依交期、优先级顺序分配产出。</div></article>
+    </div>
+    <div class="runbar"><div><strong>准备好比较你的排程了吗？</strong><span>本地计算 · 启发式搜索 · 支持取消</span></div><div class="actions"><button id="saveInput" class="button secondary">↓ 保存配置</button><button id="cancel" class="button secondary" hidden>取消运行</button><button id="run" class="button primary">生成排程 <span>→</span></button></div></div>
+    <div id="status" role="status" aria-live="polite">示例已载入，点击「生成排程」开始计算。</div><progress id="progress" max="1" value="0" hidden aria-label="排程计算进度"></progress>
+  </section>
+  <section id="results">
+    <div class="section-heading"><div><div class="eyebrow green">03 / RESULTS</div><h2>看清每条产线的每一天。</h2><p id="resultCaption">生成后显示真实计算结果，修改输入后需要重新运行。</p></div><div class="actions"><button class="button secondary" id="exportJson" disabled>↓ 完整 JSON</button><button class="button secondary" id="exportCsv" disabled>↓ 排程 CSV</button></div></div>
+    <div id="empty" class="empty card"><span>▥</span><h3>等待你的第一份排程</h3><p>配置订单后，查看交付指标、产线甘特图与订单履约明细。</p><a href="#inputs">前往配置 ↑</a></div>
+    <div id="resultContent" hidden>
+      <div id="kpis" class="kpis"></div>
+      <article class="card chart-card"><div class="card-heading"><div><h3>产线排程甘特图</h3><p>每格代表一天；浅色为爬坡期，↻ 表示跨型号换型。点选色块查看生产分配。</p></div><div class="legend" id="legend"></div></div><div class="table-scroll"><div id="gantt"></div></div><div id="cellDetail" class="cell-detail" aria-live="polite">点击某个生产日查看可用产能与订单分配。</div></article>
+      <div class="result-grid"><article class="card chart-card"><div class="card-heading"><div><h3>每日产出</h3><p>实际产出与可用产能对比</p></div><span class="chip">DAILY OUTPUT</span></div><div id="dailyChart" class="daily-chart" role="img" aria-label="每日实际产出与可用产能柱状图"></div><div class="chart-key"><i></i> 实际产出 <i class="pale"></i> 可用产能</div></article><article class="card chart-card"><div class="card-heading"><div><h3>方案说明</h3><p>读懂指标与计算口径</p></div></div><div id="facts"></div></article></div>
+      <article class="card"><div class="card-heading"><div><h3>订单履约明细</h3><p>按时交付 + 延期交付 + 期末欠交 = 订单数量</p></div><button id="exportOrders" class="button small secondary">↓ 订单 CSV</button></div><div class="table-scroll"><table><thead><tr><th>订单</th><th>型号</th><th>需求</th><th>交期</th><th>按时交付</th><th>延期交付</th><th>期末欠交</th><th>完成日</th></tr></thead><tbody id="fulfillment"></tbody></table></div></article>
+    </div>
+  </section>
+  <section id="method" class="method-section"><div><div class="eyebrow green">04 / METHODOLOGY</div><h2>把复杂约束，变成可比较的选择。</h2><p>从原项目提取混线生产的核心逻辑，在浏览器中探索不同生产序列的影响。</p><div class="note">这是独立的简化交互模型。原 Python / Pyomo 工业模型保留，原始物料齐套、组装/包装跨工序衔接、规格匹配、设备集群均衡和集合覆盖 MIP 未在此版复现。</div></div><div class="method-steps"><article><b>01</b><div><h3>生成可行的每日安排</h3><p>每线每天一个型号。启动后满足最少连续运行；临近计划末端，无法满足完整运行期的新任务不再启动。</p></div></article><article><b>02</b><div><h3>计算爬坡后的有效产能</h3><p>连续生产使产能逐日恢复，空闲中断后重启重新爬坡。每次跨型号切换叠加当天换型损耗。</p></div></article><article><b>03</b><div><h3>保留有潜力的候选序列</h3><p>束搜索每天保留有限候选：平衡优先级加权欠交件天、换型惩罚、少量提前生产代价及期末欠交惩罚。搜索宽度更大通常探索更多方案。</p></div></article><article><b>04</b><div><h3>汇总交付与产线安排</h3><p>输出可执行约束下的候选方案；属于启发式搜索，不提供全局最优性保证。利用率按产出 / 全部额定产能计算；按时交付率按件数计算。</p></div></article></div></section>
+  <footer>Battery Studio <span>Make room for better production decisions.</span><a href="#problem">回到顶部 ↑</a></footer>
+</main>
+</body></html>
