@@ -1,6 +1,6 @@
 # Content requiring owner review
 
-- Confirm individual responsibilities, team boundaries, dates, and permission to describe the original solar MPS and fleet projects. Their reading guides explicitly leave personal contribution unconfirmed.
+- Confirm individual responsibilities, team boundaries, dates, and permission to describe the original solar MPS and fleet projects. Unverified personal-contribution rows are omitted from public case guides; keep attribution review in this editorial record.
 - Confirm the exact relationship between public prototypes and commissioned work. Do not describe the demos as production deployments.
 - Supply attributable baselines, periods, sample sizes, calculation methods and permission to publish before restoring old claims: solar delivery 86% → 98%; appliance delivery 76% → 97%; battery KPI tables and runtime promises; steel 16.7% cost reduction / RMB 3 million monthly savings. Original text remains recoverable in Git history.
 - The generated Insights drafts have been withdrawn. Writing now links to the two verified articles in the owner-provided Zhihu column.
