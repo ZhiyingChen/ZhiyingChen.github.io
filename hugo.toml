@@ -1,5 +1,5 @@
 baseURL = 'https://zhiyingchen.github.io/'
-title = "Nicole Chen | Independent Professional"
+title = "Nicole Chen"
 theme = 'blowfish'
 defaultContentLanguage = 'zh-cn'
 hasCJKLanguage = true
@@ -15,7 +15,7 @@ buildFuture = false
   label = '简体中文'
   locale = 'zh-CN'
   weight = 1
-  title = "Nicole Chen | Independent Professional"
+  title = "Nicole Chen"
   [languages.zh-cn.params]
     displayName = '中文'
     isoCode = 'zh-CN'
@@ -76,7 +76,7 @@ buildFuture = false
   label = 'English'
   locale = 'en-US'
   weight = 2
-  title = "Nicole Chen | Independent Professional"
+  title = "Nicole Chen"
   [languages.en.params]
     displayName = 'English'
     isoCode = 'en'

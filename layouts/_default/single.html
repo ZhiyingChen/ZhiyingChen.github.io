@@ -9,6 +9,7 @@
     {{ with .Params.demo_url }}<div class="detail-actions"><a class="button-primary demo-button" href="{{ if strings.HasPrefix . `/` }}{{ strings.TrimPrefix `/` . | relURL }}{{ else }}{{ . | safeURL }}{{ end }}" target="_blank" rel="noopener noreferrer">{{ i18n "open_demo" }} <span aria-hidden="true">↗</span></a><span>{{ i18n "demo_new_window" }}</span></div>{{ end }}
   </header>
     {{ if eq .Section "insights" }}<div class="insight-meta"><span>{{ .Params.category }}</span><time datetime="{{ .Date.Format `2006-01-02` }}">{{ .Date.Format "02 Jan 2006" }}</time><span>{{ .ReadingTime }} {{ if eq .Site.Language.Lang "en" }}min read{{ else }}分钟阅读{{ end }}</span></div>{{ end }}
+  {{ if eq .RelPermalink (`contact/` | relLangURL) }}{{ partial "engagements.html" . }}{{ end }}
   <div class="reading-layout {{ if eq .Params.showTableOfContents false }}without-toc{{ end }}">
     <div class="article-content prose dark:prose-invert">{{ if eq .Section "insights" }}<figure class="insight-diagram">{{ partial "project-diagram.html" . }}<figcaption>{{ if eq .Site.Language.Lang "en" }}Conceptual diagram derived from the related project model; not computed results.{{ else }}根据相关项目结构绘制的概念图，非计算结果。{{ end }}</figcaption></figure>{{ end }}{{ .Content }}</div>
     {{ if and (ne .Params.showTableOfContents false) (in .TableOfContents "<ul") }}<aside class="reading-toc" aria-label="{{ i18n "toc_label" }}"><div><p class="eyebrow">{{ i18n "toc" }}</p>{{ .TableOfContents }}</div></aside>{{ end }}

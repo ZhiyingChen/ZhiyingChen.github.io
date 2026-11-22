@@ -1757,3 +1757,41 @@ h2 {letter-spacing:-1px;}
 .home-resume-columns .resume-timeline h3 {font-size:19px;}
 @media(max-width:1050px) {.home-resume-columns {grid-template-columns:1fr;gap:25px;}}
 @media(max-width:600px) {.home-resume-columns .resume-timeline>li {grid-template-columns:1fr;gap:10px;}}
+/* Second-round refinement: hierarchy for cases, tools, methodology and services. */
+.professional-copy h1 {font-size:clamp(36px,3.9vw,53px);line-height:1.2;letter-spacing:-1.5px;max-width:680px;}
+html[lang="en"] .professional-copy h1 {font-size:clamp(36px,3.4vw,48px);}
+.featured-cases {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
+.featured-case {border:1px solid var(--line);background:var(--card);}
+.featured-case-art {background:var(--soft);color:var(--accent);padding:15px;}
+.featured-case-art svg {width:100%;height:145px;}
+.featured-case-body {padding:25px;}
+.featured-case-body h3 {font-size:21px;line-height:1.45;font-weight:600;}
+.featured-case-body>p:not(.card-eyebrow) {font-size:13px;line-height:1.9;color:var(--muted);margin:15px 0;}
+.method-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;padding:0;list-style:none;}
+.method-grid>li {border-top:2px solid var(--accent);padding-top:20px;}
+.method-grid>li>span,.engagement-grid>article>span {font-size:11px;letter-spacing:2px;color:var(--accent);}
+.method-grid h3 {font-size:22px;margin:15px 0 12px;}
+.method-grid p {font-size:13px;color:var(--muted);line-height:1.9;}
+.how-work .section-heading h2 {font-size:29px;}
+.demo-shelf {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 45px;}
+.demo-item {border-top:1px solid var(--line);padding-top:24px;}
+.demo-item h3 {font-size:19px;line-height:1.5;margin:12px 0;}
+.demo-item p {font-size:13px;color:var(--muted);margin-bottom:15px;}
+.practice-section h2 {font-size:30px;line-height:1.4;margin:18px 0;}
+.practice-section p:not(.eyebrow) {font-size:14px;color:var(--muted);max-width:800px;margin-bottom:20px;}
+.engagements {padding:45px 0 20px;}
+.engagements>h2 {font-size:27px;margin-bottom:28px;}
+.engagement-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;margin-bottom:25px;}
+.engagement-grid>article {border-top:1px solid var(--line);padding-top:20px;}
+.engagement-grid h3 {font-size:20px;line-height:1.5;margin:14px 0;}
+.engagement-grid p {font-size:13px;line-height:1.9;color:var(--muted);}
+.exploration-shelf {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:35px;}
+.exploration-shelf article {border-top:1px solid var(--line);padding-top:20px;}
+.exploration-shelf h3 {font-size:20px;line-height:1.5;margin:12px 0;}
+.exploration-shelf p {font-size:13px;color:var(--muted);margin-bottom:16px;}
+.archive-tier {padding:40px 0;border-top:1px solid var(--line);}
+.archive-tier>h2 {font-size:29px;margin-bottom:25px;}
+.archive-link {display:inline-block;margin-top:25px;}
+.resume-narrative {max-width:850px;margin-bottom:40px;}
+@media(max-width:1000px) {.featured-cases {grid-template-columns:1fr;}.featured-case {display:grid;grid-template-columns:.7fr 1fr;}.featured-case-art {display:flex;align-items:center;}.method-grid {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:600px) {.featured-case {grid-template-columns:1fr;}.featured-case-art svg {height:120px;}.featured-case-body {padding:23px;}.professional-copy h1,html[lang="en"] .professional-copy h1 {font-size:37px;}.method-grid,.demo-shelf,.engagement-grid,.exploration-shelf {grid-template-columns:1fr;}.method-grid>li {display:grid;grid-template-columns:35px 1fr;gap:15px;}.method-grid h3 {margin-top:0;}.how-work .section-heading h2,.practice-section h2 {font-size:26px;}}
