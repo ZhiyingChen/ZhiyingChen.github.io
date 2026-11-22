@@ -75,18 +75,6 @@ A second model makes the implicit **“which supply serves which demand”** rel
 - Configurable priorities, including overdue quantities before cost.
 - Planning that can include both historical backlogs and future orders.
 
-## Example project results
-
-| KPI | Before | After | Change |
-| --- | --- | --- | --- |
-| On-time delivery rate | 76% | 97% | +21 percentage points |
-| Number of overdue orders | 45 | 4 | −91% |
-| Procurement planning accuracy | 15% excess | Within ±2% | Improved control |
-| Critical resource utilization | Substantial variation | Average increase of 18% | Improved |
-| Model solve time | — | 1–2 minutes on average | — |
-
-These figures come from the appliance project samples described in the original case, covering freezer and air-conditioning products.
-
 ## Applications
 
 - **Air conditioners:** multiple lines and product changeovers.
@@ -96,4 +84,4 @@ These figures come from the appliance project samples described in the original 
 
 ## Get in touch
 
-This framework has been applied in manufacturing projects. [Contact me](/contact/) to discuss the model structure, planning logic, or algorithm details.
+This page documents the model and methodology; production scope and business impact require separate verification. [Contact me](/contact/) to discuss the model structure, planning logic, or algorithm details.

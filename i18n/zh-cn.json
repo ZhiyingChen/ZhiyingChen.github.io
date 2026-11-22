@@ -142,5 +142,8 @@
   },
   "exploring": {
     "other": "持续探索中"
+  },
+  "nav.main_menu": {
+    "other": "主导航"
   }
 }

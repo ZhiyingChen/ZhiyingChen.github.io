@@ -21,19 +21,13 @@ aliases = ["/cases/integrated-steel/"]
 
 Following the Column Studio workflow, explore the problem, edit fictional ore prices and chemistry, set quality and availability limits, run a scenario, inspect blend proportions and cost breakdowns, and export CSV or JSON. Calculations run locally in the browser.
 
-The demonstration enumerates a simplified discrete model: 5% ore and burden increments and 25% internal pellet increments, with fixed yields and simplified iron balance and fuel relationships. It does not guarantee a continuous global optimum. Full chemistry, return fines, and the original Grid / GRASP + SLSQP solver require the project's separate Python Web service. Historical project outcomes below are independent of demo results.
+The demonstration enumerates a simplified discrete model: 5% ore and burden increments and 25% internal pellet increments, with fixed yields and simplified iron balance and fuel relationships. It does not guarantee a continuous global optimum. Full chemistry, return fines, and the original Grid / GRASP + SLSQP solver require the project's separate Python Web service. Demo results are not evidence of real business impact.
 
 ## Overview
 
 I built a **nonlinear ore-blending model that connects sintering and ironmaking**, minimizing total cost per tonne of hot metal. It accounts for raw-material chemistry, moisture, ignition losses, return fines, fuel use, slag basicity, and downstream cost effects.
 
 An Excel-based workflow supports both individual solves and batches of scenarios.
-
-## Reported project results
-
-The model has been run with real production data to help a steelworks evaluate blends that satisfy grade and slag-basicity requirements. It replaces a slow, experience-led adjustment process with faster calculations and scenario comparisons.
-
-The original project records an **average cost reduction of approximately 16.7% per tonne of hot metal and monthly savings of around RMB 3 million**.
 
 ## Business background
 

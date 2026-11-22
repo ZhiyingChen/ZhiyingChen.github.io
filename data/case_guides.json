@@ -1,0 +1,154 @@
+{
+  "items": [
+    {
+      "slug": "solar-mps",
+      "zh-cn": [
+        "光伏制造主计划",
+        "拉晶与切片的长周期产能计划，需要兼顾工序衔接与订单交期。",
+        "决定设备何时启停、各期生产多少，并跟踪库存和欠交。",
+        "启停上限、最短运行期、首日产能折扣与工艺良率相互耦合。",
+        "现有材料描述了模型结构，但未明确区分我与团队的贡献范围。",
+        "原模型使用 MIP 与分层目标；公开演示使用简化束搜索。",
+        "Python / Pyomo 与求解器；浏览器演示支持参数调整及 CSV / JSON 导出。",
+        "公开演示呈现开机日历、库存与履约变化；不据此推断实际生产收益。",
+        "上游满产不等于下游按期交付，工序间的物料平衡必须显式表达。"
+      ],
+      "en": [
+        "Manufacturing Planning Optimization",
+        "Crystal growth and wafer slicing require coordinated capacity planning over a long horizon.",
+        "Decide equipment start/stop timing and production quantities while tracking inventory and overdue demand.",
+        "Start/stop limits, minimum runs, startup discounts, and yields interact across stages.",
+        "The existing record explains the model but does not establish the boundary between my work and team contributions.",
+        "The original model uses MIP and hierarchical objectives; the public demo uses a simplified beam search.",
+        "Python / Pyomo and a solver for the original model; browser parameters and CSV / JSON exports for the demo.",
+        "The public demo displays equipment calendars, stock, and fulfillment. It does not establish realized production benefits.",
+        "Upstream utilization does not ensure downstream delivery. Material balance between stages must be explicit."
+      ]
+    },
+    {
+      "slug": "battery-scheduling",
+      "zh-cn": [
+        "锂电主计划与排程",
+        "多型号锂电池共用产线，换型和产能爬坡会影响订单交付。",
+        "安排各产线每天的生产型号和产量，兼顾订单交期、连续运行与换型损耗。",
+        "单线单型号、最短连续运行期与换型后的产能恢复，需要一起纳入计划。",
+        "项目资料记录了建模与求解方案；我与团队的具体分工尚待补充。",
+        "原模型使用 MIP 与生产覆盖区间，分阶段求解；网页演示使用简化束搜索。",
+        "原模型采用 Python / Pyomo 与 CPLEX。Battery Studio 支持调整订单、产线和爬坡参数，导出 JSON / CSV。",
+        "演示输出逐日产量、产线甘特图和订单履约明细，便于检查插单或换型对计划的影响。",
+        "换型损耗不能只按一次固定扣减处理，还要考虑后续几天的产能爬坡。"
+      ],
+      "en": [
+        "Battery Master Planning & Scheduling",
+        "Multiple battery models share production lines, with changeovers and ramp-up affecting deliveries.",
+        "Assign daily production models and quantities to lines while accounting for due dates, continuous runs, and changeover losses.",
+        "One model per line per day, minimum run lengths, and post-changeover capacity recovery interact in the plan.",
+        "The project record describes the modeling and solution strategy; my responsibilities relative to the team still need clarification.",
+        "The original model uses MIP and production coverage intervals with staged solving; the browser demo uses a simplified beam search.",
+        "Python / Pyomo and CPLEX for the original model. Battery Studio provides editable orders, lines, and ramp-up parameters with JSON / CSV exports.",
+        "The demo produces daily output, line Gantt charts, and order-fulfillment details for reviewing urgent orders and changeovers.",
+        "Changeover losses include the capacity ramp-up over subsequent days, beyond a one-time reduction."
+      ]
+    },
+    {
+      "slug": "integrated-steel",
+      "zh-cn": [
+        "钢铁配矿与工序联动",
+        "原料价格、化学成分与下游燃耗共同影响吨铁成本。",
+        "同时评估烧结配比与炼铁炉料结构，而非只比较矿石采购单价。",
+        "品位、碱度、烧损、燃耗与返粉形成跨工序耦合。",
+        "我负责问题抽象、一体化逻辑、非线性建模、Excel 输入输出，以及单次与批量运行流程。",
+        "从烧结段计算成分与成本，再连接炼铁段的燃耗和经济性。",
+        "原模型采用非线性优化与 Excel 工作流；公开演示采用离散枚举。",
+        "可查看配比、成本拆解和约束校验。现有仓库没有足以独立核验业务收益的数据。",
+        "一个看似便宜的原料可能增加下游成本，评价边界应覆盖整个工艺链。"
+      ],
+      "en": [
+        "Steel Blending Optimization",
+        "Ore prices, chemistry, and downstream fuel consumption jointly influence cost per tonne of hot metal.",
+        "Evaluate sinter blends and blast-furnace burden together, beyond raw-material purchase price.",
+        "Grade, basicity, ignition losses, fuel, and return fines create cross-stage dependencies.",
+        "I handled problem abstraction, integrated process logic, nonlinear modeling, Excel inputs and outputs, and single/batch workflows.",
+        "Calculate sintering chemistry and cost, then carry those results into ironmaking fuel and economic calculations.",
+        "The original model uses nonlinear optimization and Excel; the public demo uses discrete enumeration.",
+        "The demo exposes blends, cost breakdowns, and constraint checks. This repository does not independently substantiate realized savings.",
+        "An inexpensive input can increase downstream cost. The evaluation boundary should cover the full process."
+      ]
+    },
+    {
+      "slug": "multi-rostering",
+      "zh-cn": [
+        "车辆轮转与维修排班",
+        "持续值守任务需要多类车辆共同执行，并定期退出维修。",
+        "在满足每小时服务需求的同时，寻找用车更少的可行轮转方案。",
+        "车型差异、服务周期与维修停机使局部贪心方案容易出现集中缺车。",
+        "现有说明保留算法与代码结构，但尚未明确划分我与团队的工作范围。",
+        "以错峰轮转子模块评估车型配置，结合 ALNS 的摧毁、修复与自适应权重搜索。",
+        "以车型服务数量表示方案，输出轮转与维修甘特图；交互演示位于外部服务。",
+        "可讨论方案的服务覆盖与资源需求；没有公开对照实验可支持普遍最优性或实际节省。",
+        "维修也是容量的一部分；启发式方案需要逐条校验覆盖与可用性。"
+      ],
+      "en": [
+        "Fleet Rotation & Logistics",
+        "Continuous service requires multiple vehicle types that periodically leave operation for maintenance.",
+        "Find feasible rotations with fewer vehicles while satisfying hourly service demand.",
+        "Different trip cycles and maintenance downtime can cause simultaneous shortages in a greedy schedule.",
+        "The existing explanation preserves algorithm and code structure; individual and team responsibilities still need confirmation.",
+        "Evaluate fleet mixes using staggered rotations, then search with ALNS destroy/repair operators and adaptive weights.",
+        "Represent a solution by service allocations across vehicle types and visualize rotations in a Gantt chart. The demo is externally hosted.",
+        "Evaluate service coverage and resource requirements. No public controlled benchmark establishes universal optimality or realized savings.",
+        "Maintenance is part of capacity. Heuristic schedules need explicit service-coverage and availability checks."
+      ]
+    },
+    {
+      "slug": "warehouse-location",
+      "zh-cn": [
+        "供应链网络与仓储选址",
+        "多城市需求需要在仓储、库存、运输和服务时效之间取得平衡。",
+        "决定在哪里建仓、配置多少库存、怎样分配客户需求。",
+        "选址为离散决策，供货受库存与运输时效约束，成本项之间存在取舍。",
+        "我负责业务抽象、模型设计、输入输出结构、Python / Pyomo 实现，以及 Streamlit 交互与结果展示。",
+        "联合建仓、库存和供货变量，最小化仓储、运输、缺货与资金占用成本。",
+        "四类 CSV 输入，LP / MILP 建模，输出建仓方案、客户满足情况和成本拆解。",
+        "这是公开交互 demo；样例规模与输出用于展示分析流程，不代表客户部署。",
+        "最近的仓未必带来最低总成本，缺货惩罚和时效规则需要一起解释。"
+      ],
+      "en": [
+        "Supply Chain Network Design",
+        "A multi-city network must balance facilities, inventory, transport, and service time.",
+        "Choose warehouse locations, stock levels, and allocations to customers.",
+        "Discrete openings interact with inventory limits, delivery-time rules, and competing cost categories.",
+        "I handled business abstraction, model and I/O design, Python / Pyomo implementation, and the Streamlit interaction and results.",
+        "Jointly optimize facility, inventory, and supply variables against storage, transport, shortage, and capital costs.",
+        "Four CSV input groups, LP / MILP modeling, and outputs for facilities, demand fulfillment, and cost breakdowns.",
+        "This is a public interactive demonstration. Sample scale and outputs illustrate a workflow, not a client deployment.",
+        "The nearest warehouse may not minimize total cost. Shortage penalties and service rules need to be explained together."
+      ]
+    },
+    {
+      "slug": "cutting-stock",
+      "zh-cn": [
+        "卷纸切割与列生成",
+        "将固定宽度的原纸卷分切为多种规格，满足不同日期的订单需求。",
+        "决定切割组合及各组合的使用次数，在满足需求的同时减少原卷使用和废料。",
+        "可选切割组合很多，每卷切割数有限；剩余宽度还需区分可入库残料与废料。",
+        "我自主开发并部署了这一交互应用，工作包括模型实现与列生成流程封装。",
+        "主问题求解 LP 获取对偶值，背包子问题生成新切割模式，最后在已生成的模式集上求解整数模型。",
+        "Python / Pyomo + GLPK，支持多日期计算和残料策略；交互应用部署在独立服务。",
+        "输出各切割模式的使用次数及残料、废料情况，用于比较不同订单组合和残料规则。",
+        "列生成可减少一次性枚举的模式数量；最终整数解基于已生成模式集，不应直接等同于完整问题的全局最优。"
+      ],
+      "en": [
+        "Paper Roll Cutting & Column Generation",
+        "Cut fixed-width parent rolls into multiple sizes to meet orders across different dates.",
+        "Choose cutting patterns and their usage counts to meet demand while reducing parent-roll consumption and waste.",
+        "The pattern space is large, cuts per roll are limited, and remaining width must be classified as reusable stock or waste.",
+        "I independently developed and deployed the interactive application, including model implementation and the column-generation workflow.",
+        "Solve an LP master problem for dual values, generate patterns through a knapsack subproblem, then solve an integer model over the generated patterns.",
+        "Python / Pyomo + GLPK with multi-date computation and configurable remainder handling. The interactive application is hosted separately.",
+        "Outputs describe pattern usage, reusable remainders, and waste for comparing order mixes and remainder policies.",
+        "Column generation avoids enumerating every pattern upfront. The final integer solution uses the generated pattern set and does not by itself certify global integer optimality."
+      ]
+    }
+  ]
+}

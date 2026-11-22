@@ -1,0 +1,116 @@
+{
+  "jobs": [
+    {
+      "period": "2026.03 —",
+      "current": true,
+      "company": "Meta",
+      "role": "Data Expert of Manufacturing Operations",
+      "zh-cn": [
+        "制造运营数字化与生产计划系统建设。",
+        "计划数据口径、校验、版本管理与追溯。",
+        "排产结果分析、业务需求梳理及跨职能交付协调。"
+      ],
+      "en": [
+        "Manufacturing operations digitalization and production planning systems.",
+        "Planning data definitions, validation, version management, and traceability.",
+        "Planning analysis, requirements, and cross-functional delivery coordination."
+      ]
+    },
+    {
+      "period": "2024.09 — 2026.03",
+      "company": "Air Products",
+      "role": "Data Scientist",
+      "zh-cn": [
+        "物流与客户服务数字化，开发运营看板与分析工具。",
+        "客户信息分析、需求预测与 GIS 行程推荐。",
+        "第三方运输里程分配与资源优化。"
+      ],
+      "en": [
+        "Digital tools and dashboards for logistics and customer service.",
+        "Customer analytics, demand forecasting, and GIS-based route recommendations.",
+        "Third-party transport mileage allocation and resource optimization."
+      ]
+    },
+    {
+      "period": "2022.09 — 2024.09",
+      "company": "悠桦林",
+      "company_en": "Youhualin",
+      "role": "Algorithm Engineer",
+      "zh-cn": [
+        "制造与供应链项目的 POC、建模、算法开发和实施支持。",
+        "MPS、MRP 和 S&OP 相关产品设计与迭代。",
+        "整数规划、列生成与启发式算法。"
+      ],
+      "en": [
+        "POCs, modeling, algorithm development, and implementation support for manufacturing and supply chain projects.",
+        "Product design and iteration for MPS, MRP, and S&OP.",
+        "Integer programming, column generation, and heuristic algorithms."
+      ]
+    },
+    {
+      "period": "2022.05 — 2022.08",
+      "company": "Sopra Steria",
+      "role": "Operations Research Intern",
+      "role_zh": "运筹算法实习生",
+      "zh-cn": [
+        "垂直农业货架摆放与服务机器人配置优化。",
+        "整数规划建模与启发式算法开发。"
+      ],
+      "en": [
+        "Shelf layout and service-robot allocation for vertical farming.",
+        "Integer programming models and heuristic algorithms."
+      ]
+    },
+    {
+      "period": "2021.03 — 2021.05",
+      "company": "ByteDance",
+      "company_zh": "字节跳动",
+      "role": "Anomaly Detection Intern",
+      "role_zh": "异常检测算法实习生",
+      "zh-cn": [
+        "时间序列异常检测、故障定位与因果分析。"
+      ],
+      "en": [
+        "Time-series anomaly detection, fault localization, and causal analysis."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "period": "2021 — 2022",
+      "zh-cn": {
+        "school": "爱丁堡大学",
+        "degree": "运筹学与数据科学硕士",
+        "details": [
+          "Distinction",
+          "毕业论文：可持续自动化室内垂直农业"
+        ]
+      },
+      "en": {
+        "school": "University of Edinburgh",
+        "degree": "MSc Operational Research with Data Science",
+        "details": [
+          "Distinction",
+          "Dissertation: Sustainable Automated Indoor Vertical Farming"
+        ]
+      }
+    },
+    {
+      "period": "2017 — 2021",
+      "zh-cn": {
+        "school": "南京大学",
+        "degree": "英语语言文学学士 · 辅修数学第二专业",
+        "details": [
+          "2019 年赴谢菲尔德大学交换一学期"
+        ]
+      },
+      "en": {
+        "school": "Nanjing University",
+        "degree": "BA English Language and Literature · Mathematics minor",
+        "details": [
+          "Exchange semester at the University of Sheffield, 2019"
+        ]
+      }
+    }
+  ]
+}

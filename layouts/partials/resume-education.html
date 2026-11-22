@@ -1,0 +1,8 @@
+{{ $lang := .page.Site.Language.Lang }}
+<ol class="resume-timeline">
+  {{ range hugo.Data.resume.education }}{{ $e := index . $lang }}
+  <li><p class="resume-period">{{ .period }}</p><div><h3>{{ $e.school }}</h3><p class="resume-role">{{ $e.degree }}</p>
+    <ul>{{ range $e.details }}{{ if or (not $.compact) (eq . "Distinction") }}<li>{{ . }}</li>{{ end }}{{ end }}</ul>
+  </div></li>
+  {{ end }}
+</ol>

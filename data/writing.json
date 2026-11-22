@@ -1,0 +1,29 @@
+{
+  "column": "https://www.zhihu.com/column/c_2106414105271837104",
+  "articles": [
+    {
+      "url": "https://zhuanlan.zhihu.com/p/2106418191031333742",
+      "date": "2026-11-20",
+      "zh-cn": {
+        "title": "【供应链】一笔需求订单为什么没满足？",
+        "summary": "从计划版本对比开始，沿 BOM 逐层查看结存和产线负荷，分清一笔缺口是缺物料，还是缺产能。"
+      },
+      "en": {
+        "title": "Why was a demand order left unfulfilled?",
+        "summary": "Compare planning versions, then trace inventory and line loads through the BOM to distinguish material shortages from capacity constraints."
+      }
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/2106413723543941652",
+      "date": "2026-11-18",
+      "zh-cn": {
+        "title": "【供应链】APS系统只需运行20分钟，为什么生产计划还要忙一周？",
+        "summary": "跟着一版周计划从需求确认走到工单下发，看看时间花在了哪些数据核对、缺口评审和人工调整上。"
+      },
+      "en": {
+        "title": "APS takes 20 minutes. Why does planning still take a week?",
+        "summary": "Follow a weekly plan from demand confirmation to work-order release, including data preparation, shortage reviews, and manual adjustments."
+      }
+    }
+  ]
+}

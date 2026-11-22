@@ -1,4 +1,5 @@
 +++
-title = "Nicole’s Wonderland"
-description = "Operations research, data modeling, and practical systems for manufacturing and supply chains."
+title = "Nicole Chen | Independent Professional"
+description = "Turning Complex Operations into Better Decisions."
+
 +++

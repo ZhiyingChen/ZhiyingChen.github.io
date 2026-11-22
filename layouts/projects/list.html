@@ -1,4 +1,4 @@
 {{ define "main" }}
-<section class="portfolio-page"><header class="page-heading"><p class="eyebrow">PROJECTS & EXPLORATIONS</p><h1>{{ .Title }}</h1><p>{{ .Description }}</p><div class="page-meta"><span>{{ i18n "project_count" }}</span><span>{{ i18n "case_count" }}</span><span>{{ i18n "exploring" }}</span></div></header>
+<section class="portfolio-page"><header class="page-heading"><p class="eyebrow">PROJECTS & EXPLORATIONS</p><h1>{{ .Title }}</h1><p>{{ .Description }}</p><div class="page-meta"><span>{{ len .RegularPages }} {{ if eq .Site.Language.Lang "en" }}project records{{ else }}份项目记录{{ end }}</span><a class="text-link" href="{{ `cases/` | relLangURL }}">{{ if eq .Site.Language.Lang "en" }}Selected case studies{{ else }}精选案例研究{{ end }} ↗</a></div></header>
 <div class="project-grid">{{ range .RegularPages.ByWeight }}{{ partial "project-card.html" . }}{{ end }}</div></section>
 {{ end }}

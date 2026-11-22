@@ -142,5 +142,8 @@
   },
   "exploring": {
     "other": "More to explore"
+  },
+  "nav.main_menu": {
+    "other": "Main navigation"
   }
 }

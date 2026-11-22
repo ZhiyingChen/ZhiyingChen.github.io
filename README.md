@@ -79,3 +79,21 @@ python scripts/verify_site.py --public public
 `import_notion.py` 会缓存原始公开页面到 `.migration/`，重复运行会复用缓存；刷新特定页面前先移除对应缓存文件。`export_content.py` 会覆盖迁移生成的正文，日常编辑后请勿随意重跑。正常更新内容只需编辑 Markdown 并重新构建。
 
 主题以 Git 子模块固定在已验证的提交上，更新主题请单独验证后再提交子模块版本。
+
+## Professional platform redesign (2026-11-22)
+
+The six main entries are Home, Expertise, Case Studies, Insights, About, and Contact. The complete project archive remains at `/projects/`, with the existing project routes, aliases, external demos, and six standalone local demos preserved.
+
+- `data/brand.json`: bilingual positioning and capability copy.
+- `data/case_guides.json`: four evidence-aware case reading guides.
+- `content/insights/`: three new bilingual technical notes based on existing model descriptions.
+- `layouts/partials/brand-*.html` and `insight-list.html`: reusable editorial components.
+- `docs/redesign-audit.md`: baseline audit and migration map.
+- `docs/content-gaps.md`: owner review items and unsupported claims held from publication.
+- `docs/redesign-report.md`: implementation and validation report.
+
+The previous project-count statements above are historical migration counts. The current archive contains 13 projects per language. The redesign uses a fixed light industrial editorial identity. Publication dates on the three new notes indicate their creation on 22 November 2026; please review these drafts before release. No remote publish was performed.
+
+## Feedback revision
+
+The generated technical notes were withdrawn. Writing now links to two verified articles from the owner-provided Zhihu column. Selected Work uses five industry groups (`data/industries.json`); About uses a reverse-chronological résumé (`data/resume.json`). See `docs/revision-feedback.md`.

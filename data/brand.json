@@ -1,0 +1,116 @@
+{
+  "zh-cn": {
+    "label": "运筹优化 · 制造系统",
+    "name": "Nicole Chen",
+    "tagline": "让制造业的复杂决策变得更简单。",
+    "intro": "我做过制造业主计划与排程模型，也做过物流数据分析和运营工具。目前主要从事制造运营系统建设，关注计划数据、缺口分析和系统交付。这里整理了我的项目、演示和工作记录。",
+    "position": "制造业与供应链数字化专业人士",
+    "work": "查看项目",
+    "discuss": "联系我",
+    "expertiseTitle": "我的工作方向",
+    "workTitle": "项目与演示",
+    "workIntro": "按行业整理。项目页保留模型说明、输入输出和可运行的演示。",
+    "allWork": "查看全部项目",
+    "insightsTitle": "写作 · 智造纵深",
+    "allInsights": "查看文章",
+    "aboutTitle": "工作与教育经历",
+    "aboutIntro": "从算法工程师、数据科学家，到制造运营系统建设。",
+    "aboutLink": "查看完整履历",
+    "contactTitle": "联系我",
+    "contactIntro": "关于制造计划、供应链优化或系统建设，欢迎通过邮件联系。",
+    "contactLink": "联系 Nicole",
+    "method": [
+      "理解业务",
+      "建立模型",
+      "比较方案",
+      "连接运营"
+    ],
+    "capabilities": [
+      {
+        "title": "制造运营系统",
+        "problem": "整理计划数据、分析缺口、把结果交给业务人员使用。",
+        "why": "目前的工作涉及需求分析、计划版本、数据校验和跨团队交付。",
+        "approach": "梳理数据口径和业务流程，设计计划结果分析与版本对比功能，协调业务与开发团队完成交付。",
+        "topics": "数据治理 · 需求分析 · 系统设计 · APS 集成 · 交付"
+      },
+      {
+        "title": "生产计划与排程",
+        "problem": "把订单、BOM、库存和产能放进同一套计划模型。",
+        "why": "相关项目包括家电 MPS、光伏主计划和锂电池排程。",
+        "approach": "使用 MIP 和分阶段目标处理交付、物料平衡、启停与换型约束；用情景试算检查不同配置下的计划结果。",
+        "topics": "MPS · APS · 产能建模 · 物料约束 · 计划版本"
+      },
+      {
+        "title": "物流与供应链",
+        "problem": "车辆怎么轮转、仓库设在哪里、客户由谁供货。",
+        "why": "做过车辆维修排班、仓网选址和资源分配相关模型。",
+        "approach": "根据工时、维修周期、运输时效和成本建立约束，输出车辆排班、建仓与供货方案。",
+        "topics": "库存 · 仓网选址 · 物流 · 车辆轮转 · 资源配置"
+      },
+      {
+        "title": "数学建模与算法",
+        "problem": "根据问题结构选择求解方法。",
+        "why": "项目中使用过整数规划、列生成、非线性优化和 ALNS。",
+        "approach": "先定义变量、约束和目标，再选择精确求解或启发式方法；结合样例检查可行性和计算规模。",
+        "topics": "MILP · LP · 列生成 · ALNS · 数学建模"
+      }
+    ]
+  },
+  "en": {
+    "label": "OPERATIONS RESEARCH · MANUFACTURING SYSTEMS",
+    "name": "Nicole Chen",
+    "tagline": "Turning Complex Operations into Better Decisions.",
+    "intro": "I have worked on manufacturing planning models, logistics analytics, and operational tools. My current work focuses on manufacturing systems, planning data, shortage analysis, and system delivery. This site collects my projects, demos, and writing.",
+    "position": "Manufacturing & Supply Chain Digitalization Professional",
+    "work": "View projects",
+    "discuss": "Get in touch",
+    "expertiseTitle": "Areas of work",
+    "workTitle": "Projects & demos",
+    "workIntro": "Organized by industry, with model descriptions, inputs, outputs, and interactive demos.",
+    "allWork": "Explore all projects",
+    "insightsTitle": "Writing on Zhihu",
+    "allInsights": "View articles",
+    "aboutTitle": "Experience & education",
+    "aboutIntro": "Algorithm engineering, data science, and manufacturing operations systems.",
+    "aboutLink": "View my résumé",
+    "contactTitle": "Get in touch",
+    "contactIntro": "For questions about manufacturing planning, supply chain optimization, or system development, please email me.",
+    "contactLink": "Contact Nicole",
+    "method": [
+      "Understand",
+      "Model",
+      "Evaluate",
+      "Operationalize"
+    ],
+    "capabilities": [
+      {
+        "title": "Manufacturing operations systems",
+        "problem": "Prepare planning data, investigate shortages, and support plan reviews.",
+        "why": "My current work includes requirements, planning versions, data validation, and delivery coordination.",
+        "approach": "Define data and workflows, design plan analysis and version comparisons, and coordinate business and development teams.",
+        "topics": "Data governance · Requirements · System design · Integration"
+      },
+      {
+        "title": "Production planning & scheduling",
+        "problem": "Model orders, BOMs, stock, and capacity together.",
+        "why": "Projects include appliance MPS, photovoltaic planning, and battery scheduling.",
+        "approach": "Use MIP and staged objectives for deliveries, material balance, equipment states, and changeovers; compare plans across input scenarios.",
+        "topics": "MPS · APS · Capacity · Material constraints · Plan versions"
+      },
+      {
+        "title": "Logistics & supply chains",
+        "problem": "Plan fleet rotations, warehouse locations, and customer allocations.",
+        "why": "My project archive includes maintenance scheduling, facility location, and resource allocation.",
+        "approach": "Model working hours, maintenance cycles, delivery times, and costs, then produce schedules and network configurations.",
+        "topics": "Inventory · Network design · Logistics · Fleet rotation"
+      },
+      {
+        "title": "Mathematical modeling & algorithms",
+        "problem": "Select a method that fits the problem structure.",
+        "why": "Methods used in the archive include integer programming, column generation, nonlinear optimization, and ALNS.",
+        "approach": "Define variables, constraints, and objectives, then choose an exact or heuristic method and check feasibility with example instances.",
+        "topics": "MILP · LP · Column generation · ALNS · Modeling"
+      }
+    ]
+  }
+}

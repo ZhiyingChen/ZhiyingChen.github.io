@@ -1,0 +1,48 @@
+[
+  {
+    "id": "energy",
+    "zh-cn": "新能源制造",
+    "en": "Energy manufacturing",
+    "projects": [
+      "solar-mps",
+      "battery-scheduling",
+      "power-prediction"
+    ]
+  },
+  {
+    "id": "steel",
+    "zh-cn": "钢铁冶金",
+    "en": "Iron & steel",
+    "projects": [
+      "integrated-steel",
+      "mixed-mine-management",
+      "sintering-management"
+    ]
+  },
+  {
+    "id": "appliances",
+    "zh-cn": "家电制造",
+    "en": "Appliance manufacturing",
+    "projects": [
+      "appliance-mps"
+    ]
+  },
+  {
+    "id": "logistics",
+    "zh-cn": "物流与仓储",
+    "en": "Logistics & warehousing",
+    "projects": [
+      "multi-rostering",
+      "rostering",
+      "warehouse-location"
+    ]
+  },
+  {
+    "id": "paper",
+    "zh-cn": "造纸",
+    "en": "Paper manufacturing",
+    "projects": [
+      "cutting-stock"
+    ]
+  }
+]

@@ -21,7 +21,7 @@ aliases = ["/cases/solar-mps/"]
 
 Explore crystal-growth and wafer-slicing planning through problem definition, configuration, results, and methodology. Switch between standard delivery, urgent orders, and constrained slicing capacity; edit order CSV and equipment parameters; inspect daily active equipment, inventory, and fulfillment; export JSON or CSV. The workspace is in Chinese, uses fictional data, and runs locally in your browser.
 
-The interactive version uses a single-product beam-search heuristic with fixed capacities and yields; it does not guarantee global optimality. It demonstrates full-output operation, material flow, first-day capacity discounts, and minimum runs, with safety stock treated as a soft target. Monthly process parameters, multiple inventory points, and organization-level balancing from the industrial model are outside this demo. Historical project KPIs below are separate from demo results.
+The interactive version uses a single-product beam-search heuristic with fixed capacities and yields; it does not guarantee global optimality. It demonstrates full-output operation, material flow, first-day capacity discounts, and minimum runs, with safety stock treated as a soft target. Monthly process parameters, multiple inventory points, and organization-level balancing from the industrial model are outside this demo. Demo results are not evidence of real business impact.
 
 ## Project background
 
@@ -79,14 +79,6 @@ The core constraints enforce:
 - Scenario planning can identify capacity gaps over the next 30 days and support advance equipment preparation.
 - Start/stop plans can be adjusted when urgent orders arrive.
 
-## Reported results
-
-| KPI | Baseline | Optimized | Change |
-| --- | --- | --- | --- |
-| On-time delivery | 86% | 98% | About +14% relative |
-| Equipment switches per month | 32 | 18 | −44% |
-| Capacity fluctuation coefficient | 0.28 | 0.12 | −57% |
-
 ## Get in touch
 
-This project was applied in the master planning system of a major photovoltaic manufacturer. [Contact me](/contact/) to discuss the model, business constraints, or implementation.
+This page documents the model and methodology; production scope and business impact require separate verification. [Contact me](/contact/) to discuss the model, business constraints, or implementation.

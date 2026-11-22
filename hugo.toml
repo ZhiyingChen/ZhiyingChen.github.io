@@ -1,5 +1,5 @@
 baseURL = 'https://zhiyingchen.github.io/'
-title = "Nicole’s Wonderland"
+title = "Nicole Chen | Independent Professional"
 theme = 'blowfish'
 defaultContentLanguage = 'zh-cn'
 hasCJKLanguage = true
@@ -15,12 +15,12 @@ buildFuture = false
   label = '简体中文'
   locale = 'zh-CN'
   weight = 1
-  title = "Nicole’s Wonderland"
+  title = "Nicole Chen | Independent Professional"
   [languages.zh-cn.params]
     displayName = '中文'
     isoCode = 'zh-CN'
     dateFormat = '2006 年 1 月 2 日'
-    description = 'Nicole Chen 的个人网站。运筹优化、数据建模，以及制造与供应链系统建设。'
+    description = 'Nicole Chen，制造业与供应链数字化专业人士。运筹优化、计划系统与可执行的业务决策。'
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
@@ -29,7 +29,7 @@ buildFuture = false
   pagerSize = 30
 
 [params]
-  description = 'Nicole Chen 的个人网站。运筹优化、数据建模，以及在制造与供应链场景中的系统化落地。'
+  description = 'Nicole Chen，独立专业人士。让制造业的复杂决策变得更简单。'
   colorScheme = 'avocado'
   defaultAppearance = 'light'
   autoSwitchAppearance = false
@@ -56,7 +56,7 @@ buildFuture = false
     layout = 'basic'
 
   [params.footer]
-    showAppearanceSwitcher = true
+    showAppearanceSwitcher = false
     showScrollToTop = true
 
   [params.homepage]
@@ -76,54 +76,61 @@ buildFuture = false
   label = 'English'
   locale = 'en-US'
   weight = 2
-  title = "Nicole’s Wonderland"
+  title = "Nicole Chen | Independent Professional"
   [languages.en.params]
     displayName = 'English'
     isoCode = 'en'
     dateFormat = '2 January 2006'
-    description = 'Nicole Chen’s portfolio: operations research, data modeling, and practical systems for manufacturing and supply chains.'
+    description = 'Nicole Chen — Independent Professional. Turning complex operations into better decisions through manufacturing planning, supply chain optimization, and digital systems.'
 
 [[languages.zh-cn.menus.main]]
-  name = '首页'
-  pageRef = '/'
+  name = "首页"
+  pageRef = "/"
   weight = 10
 [[languages.zh-cn.menus.main]]
-  name = '项目'
-  pageRef = '/projects'
+  name = "专业能力"
+  pageRef = "/expertise"
   weight = 20
 [[languages.zh-cn.menus.main]]
-  name = '关于我'
-  pageRef = '/about'
+  name = "案例研究"
+  pageRef = "/cases"
   weight = 30
 [[languages.zh-cn.menus.main]]
-  name = '咨询网站 ↗'
-  url = 'https://wisdawn-consult.cn/'
-  weight = 35
-[[languages.zh-cn.menus.main]]
-  name = '联系'
-  pageRef = '/contact'
+  name = "洞见"
+  pageRef = "/insights"
   weight = 40
-
+[[languages.zh-cn.menus.main]]
+  name = "关于"
+  pageRef = "/about"
+  weight = 50
+[[languages.zh-cn.menus.main]]
+  name = "联系"
+  pageRef = "/contact"
+  weight = 60
 [[languages.en.menus.main]]
-  name = 'Home'
-  pageRef = '/'
+  name = "Home"
+  pageRef = "/"
   weight = 10
 [[languages.en.menus.main]]
-  name = 'Projects'
-  pageRef = '/projects'
+  name = "Expertise"
+  pageRef = "/expertise"
   weight = 20
 [[languages.en.menus.main]]
-  name = 'About'
-  pageRef = '/about'
+  name = "Case Studies"
+  pageRef = "/cases"
   weight = 30
 [[languages.en.menus.main]]
-  name = 'Consulting ↗'
-  url = 'https://wisdawn-consult.cn/'
-  weight = 35
-[[languages.en.menus.main]]
-  name = 'Contact'
-  pageRef = '/contact'
+  name = "Insights"
+  pageRef = "/insights"
   weight = 40
+[[languages.en.menus.main]]
+  name = "About"
+  pageRef = "/about"
+  weight = 50
+[[languages.en.menus.main]]
+  name = "Contact"
+  pageRef = "/contact"
+  weight = 60
 
 [markup.goldmark.renderer]
   unsafe = true

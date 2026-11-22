@@ -21,7 +21,7 @@ aliases = ["/cases/battery-scheduling/", "/projects/manufacturing-planning/"]
 
 Explore the Chinese-language workspace: edit synthetic orders, parallel lines, minimum run length, changeover loss, and ramp-up capacity; inspect the daily schedule, production chart, and order fulfillment; export JSON or CSV. All calculations run locally in your browser.
 
-The demo uses a simplified beam-search heuristic and does not guarantee a global optimum. It covers one model per line per day, minimum continuous runs, changeovers, and ramp-up. Material availability, multi-stage routing, equipment-group balancing, and the original set-covering MIP are outside its scope. Historical project KPIs below are separate from the demo's computed results.
+The demo uses a simplified beam-search heuristic and does not guarantee a global optimum. It covers one model per line per day, minimum continuous runs, changeovers, and ramp-up. Material availability, multi-stage routing, equipment-group balancing, and the original set-covering MIP are outside its scope. Demo results are not evidence of real business impact.
 
 ## Project background
 
@@ -57,30 +57,16 @@ The model includes:
 ## Solution strategy
 
 1. Construct an initial set of production intervals and fix order–equipment relationships.
-2. Refine the solution with symmetry-breaking constraints, including equipment-load balancing. In the reported benchmark, solve time decreased from **427 seconds to under 300 seconds**.
+2. Refine the solution with symmetry-breaking constraints, including equipment-load balancing. Solve time depends on instance size and the computing environment.
 3. Adjust the interval step size, for example from one day to five or ten days, to balance detail and computation.
 4. Apply ramp-up penalties to discourage costly changeovers.
 
 ## Application scenarios
 
-- Mixed-model assembly covering more than 50 battery models and over 2,000 daily orders.
-- Urgent-order insertion, with a replanning target of less than two hours.
+- Mixed-model assembly with shared resources and changeover constraints.
+- Urgent-order insertion and evaluation of revised plans.
 - Monthly capacity simulations to assess how different ramp-up assumptions affect quarterly deliveries.
-
-## Reported KPI comparison
-
-| KPI | Before | After | Change |
-| --- | --- | --- | --- |
-| Order fulfillment | 76% | 97% | About +28% relative |
-| Changeovers per day | 23 | 11 | −52% |
-| Average delivery lead time | 28 days | 23 days | −17.9% |
-| Capacity utilization | 72% | 89% | +23.6% relative |
-
-Additional scenario results recorded in the case:
-
-- Urgent-order response time: **4.5 hours → 1.2 minutes**.
-- Peak-season equipment utilization: **68% → 89%**.
 
 ## Get in touch
 
-This project was applied in the master planning system of a major lithium battery manufacturer. [Contact me](/contact/) to discuss its model structure and scheduling approach.
+This page documents the model and methodology; production scope and business impact require separate verification. [Contact me](/contact/) to discuss its model structure and scheduling approach.

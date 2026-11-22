@@ -1,4 +1,5 @@
 +++
-title = "Nicole’s Wonderland"
-description = "Nicole Chen 的网络角落：运筹优化、数据建模，以及制造与供应链系统建设。"
+title = "Nicole Chen | Independent Professional"
+description = "让制造业的复杂决策变得更简单。"
+
 +++

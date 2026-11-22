@@ -1,17 +1,19 @@
 {{ define "main" }}
 <article class="detail-page">
   <header class="detail-heading">
-    {{ if .Params.series_parent }}<a class="text-link back-link" href="{{ strings.TrimPrefix `/` .Params.series_parent | relLangURL }}">← {{ .Params.series_title }}</a>{{ else if eq .Section "projects" }}<a class="text-link back-link" href="{{ `projects/` | relLangURL }}">← {{ i18n "back_projects" }}</a>{{ else }}<p class="eyebrow">NICOLE’S WONDERLAND</p>{{ end }}
+    {{ if .Params.series_parent }}<a class="text-link back-link" href="{{ strings.TrimPrefix `/` .Params.series_parent | relLangURL }}">← {{ .Params.series_title }}</a>{{ else if eq .Section "projects" }}<a class="text-link back-link" href="{{ `projects/` | relLangURL }}">← {{ i18n "back_projects" }}</a>{{ else }}<p class="eyebrow">NICOLE CHEN</p>{{ end }}
     {{ with .Params.eyebrow }}<p class="eyebrow article-eyebrow">{{ . }}</p>{{ end }}
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="detail-description">{{ . }}</p>{{ end }}
     {{ with .Params.tags }}<div class="card-tags article-tags">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
-    {{ with .Params.demo_url }}<div class="detail-actions"><a class="button-primary demo-button" href="{{ . | safeURL }}" target="_blank" rel="noopener noreferrer">{{ i18n "open_demo" }} <span aria-hidden="true">↗</span></a><span>{{ i18n "demo_new_window" }}</span></div>{{ end }}
+    {{ with .Params.demo_url }}<div class="detail-actions"><a class="button-primary demo-button" href="{{ if strings.HasPrefix . `/` }}{{ strings.TrimPrefix `/` . | relURL }}{{ else }}{{ . | safeURL }}{{ end }}" target="_blank" rel="noopener noreferrer">{{ i18n "open_demo" }} <span aria-hidden="true">↗</span></a><span>{{ i18n "demo_new_window" }}</span></div>{{ end }}
   </header>
+    {{ if eq .Section "insights" }}<div class="insight-meta"><span>{{ .Params.category }}</span><time datetime="{{ .Date.Format `2006-01-02` }}">{{ .Date.Format "02 Jan 2006" }}</time><span>{{ .ReadingTime }} {{ if eq .Site.Language.Lang "en" }}min read{{ else }}分钟阅读{{ end }}</span></div>{{ end }}
   <div class="reading-layout {{ if eq .Params.showTableOfContents false }}without-toc{{ end }}">
-    <div class="article-content prose dark:prose-invert">{{ .Content }}</div>
+    <div class="article-content prose dark:prose-invert">{{ if eq .Section "insights" }}<figure class="insight-diagram">{{ partial "project-diagram.html" . }}<figcaption>{{ if eq .Site.Language.Lang "en" }}Conceptual diagram derived from the related project model; not computed results.{{ else }}根据相关项目结构绘制的概念图，非计算结果。{{ end }}</figcaption></figure>{{ end }}{{ .Content }}</div>
     {{ if and (ne .Params.showTableOfContents false) (in .TableOfContents "<ul") }}<aside class="reading-toc" aria-label="{{ i18n "toc_label" }}"><div><p class="eyebrow">{{ i18n "toc" }}</p>{{ .TableOfContents }}</div></aside>{{ end }}
   </div>
+  {{ if eq .Section "insights" }}<section class="related-insights"><h2>{{ if eq .Site.Language.Lang "en" }}Continue reading{{ else }}延伸阅读{{ end }}</h2>{{ partial "insight-list.html" (dict "pages" (first 2 (where (where .Site.RegularPages "Section" "insights") "RelPermalink" "ne" .RelPermalink)) "site" .Site) }}</section>{{ end }}
   {{ if or (eq .Section "projects") (eq .Section "cases") }}<div class="article-contact"><p>{{ i18n "article_contact" }}</p><a class="text-link" href="{{ `contact/` | relLangURL }}">{{ i18n "contact_nicole" }} <span aria-hidden="true">↗</span></a></div>{{ end }}
 </article>
 {{ end }}
